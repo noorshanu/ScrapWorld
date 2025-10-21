@@ -3,6 +3,9 @@ import AboutUs from "@/component/Home/AboutUs";
 import Hero from "@/component/Home/Hero";
 import Slider from "@/component/Home/Slider";
 import WhyUs from "@/component/Home/WhyUs";
+import Services from "@/component/Home/Services";
+import Cta from "@/component/Home/Cta";
+import FAQ from "@/component/Home/FAQ";
 
 export default function Home() {
   return (
@@ -10,8 +13,11 @@ export default function Home() {
 
   <Slider />
   <Hero />
+  <Services />
   <AboutUs />
   <WhyUs />
+  <Cta />
+  <FAQ />
   </>
   );
 }
