@@ -13,7 +13,7 @@ const Topbar: React.FC = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="w-full bg-[#2474A5] text-white"
     >
-      <div className="max-w-screen-2xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex h-10 items-center justify-between text-[13px]">
           <div className="flex items-center gap-4 sm:gap-6">
             <span className="hidden sm:inline font-semibold">Have any question?</span>

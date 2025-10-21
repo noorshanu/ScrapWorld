@@ -58,14 +58,12 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="w-full bg-white">
-      <div className="max-w-screen-2xl mx-auto px-4">
+      <div className="container mx-auto py-4">
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 select-none">
-            <Image src="/globe.svg" width={40} height={40} alt="ScrapWorld" priority />
-            <div className="text-2xl font-semibold tracking-wide">
-              <span className="text-[#2474A5]">SCRAP</span> <span className="text-black">WORLD</span>
-            </div>
+            <Image src="/logo.png" width={180} height={70} alt="ScrapWorld" priority />
+      
           </Link>
 
           {/* Desktop nav */}
@@ -165,7 +163,7 @@ const Navbar: React.FC = () => {
             >
               <div className="flex items-center justify-between px-4 h-16 border-b">
                 <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2">
-                  <Image src="/globe.svg" width={28} height={28} alt="ScrapWorld" />
+                  <Image src="/logo.png" width={28} height={28} alt="ScrapWorld" />
                   <span className="font-semibold">Scrap World</span>
                 </Link>
                 <button

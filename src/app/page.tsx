@@ -7,9 +7,10 @@ import WhyUs from "@/component/Home/WhyUs";
 export default function Home() {
   return (
   <>
+
+  <Slider />
   <Hero />
   <AboutUs />
-  <Slider />
   <WhyUs />
   </>
   );
