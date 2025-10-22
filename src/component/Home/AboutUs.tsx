@@ -2,20 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const countries: string[] = [
-  "USA",
-  "South Korea",
-  "Qatar",
-  "Oman",
-  "India",
-  "Thailand",
-  "Australia",
-  "Saudi Arabia",
-  "Russia",
-  "Canada",
-  "Turkey",
-  "Spain",
-];
+
 
 const AboutUs: React.FC = () => {
   return (
@@ -69,24 +56,7 @@ const AboutUs: React.FC = () => {
           </figure>
         </div>
 
-        {/* Countries list */}
-        <section aria-labelledby="countries-heading" className="mt-14 rounded-md bg-gray-50 py-10">
-          <div className="px-4">
-            <h3 id="countries-heading" className="text-center text-2xl sm:text-3xl font-extrabold text-gray-900">
-              COUNTRIES WE DEAL IN APART FROM UAE
-            </h3>
-            <div className="mx-auto mt-3 h-[3px] w-12 bg-gray-700" />
-
-            <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-8 text-gray-800">
-              {countries.map((country) => (
-                <li key={country} className="flex items-start gap-2">
-                  <span aria-hidden className="mt-1 h-2 w-2 rounded-full bg-gray-500" />
-                  <span className="font-medium">{country}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+ 
       </div>
     </section>
   );

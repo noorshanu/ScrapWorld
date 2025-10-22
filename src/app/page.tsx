@@ -6,6 +6,7 @@ import WhyUs from "@/component/Home/WhyUs";
 import Services from "@/component/Home/Services";
 import Cta from "@/component/Home/Cta";
 import FAQ from "@/component/Home/FAQ";
+import Maps from "@/component/Home/Maps";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
   <AboutUs />
   <WhyUs />
   <Cta />
+  <Maps />
   <FAQ />
   </>
   );

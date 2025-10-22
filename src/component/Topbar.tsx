@@ -11,7 +11,7 @@ const Topbar: React.FC = () => {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="w-full bg-[#2474A5] text-white"
+      className="absolute inset-x-0 top-0 z-50 w-full text-white"
     >
       <div className="container mx-auto px-4">
         <div className="flex h-10 items-center justify-between text-[13px]">

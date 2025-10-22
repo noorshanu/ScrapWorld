@@ -55,7 +55,7 @@ const Slider: React.FC = () => {
   return (
     <section
       aria-label="Hero slider"
-      className="relative w-full h-[50vh] sm:h-[62vh]  overflow-hidden"
+      className="relative w-full h-[62vh] sm:h-[78vh] overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
@@ -79,7 +79,12 @@ const Slider: React.FC = () => {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Global dim overlay */}
+          <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+          {/* Top gradient for header readability */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
+          {/* Bottom gradient for caption readability */}
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
 
           {/* Overlay content */}
           <div className="absolute inset-0 flex items-center justify-center">

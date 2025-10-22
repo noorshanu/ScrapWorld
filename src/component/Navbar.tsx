@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [openMenu, setOpenMenu] = React.useState<string | null>(null);
   const [drawerOpenItem, setDrawerOpenItem] = React.useState<string | null>(null);
+  const [scrolled, setScrolled] = React.useState(false);
 
   // Lock body scroll and close on ESC while drawer is open
   React.useEffect(() => {
@@ -56,13 +57,33 @@ const Navbar: React.FC = () => {
     return pathname.startsWith(href);
   };
 
+  // Toggle sticky + background after scrolling past the hero
+  React.useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const linkClass = scrolled
+    ? "flex items-center gap-1 font-semibold text-gray-800 hover:text-gray-900"
+    : "flex items-center gap-1 font-semibold text-white hover:text-white/90";
+  const headerClasses = scrolled
+    ? "fixed top-0 z-40 w-full bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow"
+    : "absolute top-10 z-40 w-full bg-transparent";
+  const iconColorClass = scrolled ? "text-gray-900" : "text-white";
+  const underlineColorClass = scrolled ? "bg-[#2474A5]" : "bg-white";
+
   return (
-    <header className="w-full bg-white">
+    <>
+    <header className={headerClasses}>
       <div className="container mx-auto py-4">
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 select-none">
-            <Image src="/logo.png" width={180} height={70} alt="ScrapWorld" priority />
+            <Image src="/logo.png" width={180} height={70} alt="ScrapWorld" priority className="drop-shadow" />
       
           </Link>
 
@@ -77,7 +98,7 @@ const Navbar: React.FC = () => {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 font-semibold text-gray-800 hover:text-gray-900"
+                  className={linkClass}
                 >
                   <span>{item.label}</span>
                   {item.children && <FiChevronDown className="text-[18px]" />}
@@ -89,7 +110,7 @@ const Navbar: React.FC = () => {
                     {isActive(item.href) && (
                       <motion.span
                         layoutId="nav-underline"
-                        className="absolute left-0 right-0 mx-auto h-[3px] w-8 bg-[#2474A5] rounded"
+                        className={`absolute left-0 right-0 mx-auto h-[3px] w-8 ${underlineColorClass} rounded`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -129,10 +150,10 @@ const Navbar: React.FC = () => {
           {/* Mobile menu button */}
           <button
             aria-label="Menu"
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded hover:bg-gray-50"
+            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded"
             onClick={() => setMobileOpen((v) => !v)}
           >
-            {mobileOpen ? <RxCross2 className="text-2xl" /> : <RxHamburgerMenu className="text-2xl" />}
+            {mobileOpen ? <RxCross2 className={`text-2xl ${iconColorClass}`} /> : <RxHamburgerMenu className={`text-2xl ${iconColorClass}`} />}
           </button>
         </div>
       </div>
@@ -238,6 +259,9 @@ const Navbar: React.FC = () => {
         )}
       </AnimatePresence>
     </header>
+    {/* Spacer to prevent content jump when navbar becomes fixed */}
+    {scrolled && <div aria-hidden className="h-20" />}
+    </>
   );
 };
 
