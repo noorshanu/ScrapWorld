@@ -26,7 +26,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "AVAILABLE STOCK", href: "/stock" },
-  { label: "CONTACT", href: "/contact" },
+  { label: "CONTACT", href: "/contact-us" },
 ];
 
 const Navbar: React.FC = () => {
