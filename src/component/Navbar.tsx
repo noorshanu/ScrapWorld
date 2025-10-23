@@ -21,8 +21,8 @@ const NAV_ITEMS: NavItem[] = [
     label: "PRODUCTS",
     href: "/products",
     children: [
-      { label: "Ferrous", href: "/products/ferrous" },
-      { label: "Non-Ferrous", href: "/products/non-ferrous" },
+      { label: "Scraps", href: "/scraps" },
+      { label: "Surplus", href: "/surplus" },
     ],
   },
   { label: "AVAILABLE STOCK", href: "/stock" },
