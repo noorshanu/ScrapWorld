@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       {/* Bottom bar */}
       <div className="container mx-auto px-4 py-6">
         <p className="text-xs text-gray-400">
-          Copyright © {year} - Scrap World | Designed by <span className="font-semibold">Ahlanitsolutions</span>
+          Copyright © {year} - Scrap World 
         </p>
       </div>
     </footer>
