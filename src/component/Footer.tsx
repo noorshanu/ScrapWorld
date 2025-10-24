@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import Image from "next/image";
 
 const links = [
   { label: "Home", href: "/" },
@@ -25,10 +26,14 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* About */}
           <div>
-            <h3 className="text-lg font-extrabold tracking-wide">ABOUT US</h3>
+            <Link href="/" className="inline-flex items-center gap-3 select-none">
+              <Image src="/logo.jpg" width={300} height={100} alt="Scrap World" className="opacity-95" />
+            </Link>
+            
+      
             <div className="mt-3 h-[2px] w-16 bg-white/30" />
-            <p className="mt-5 text-sm leading-7 text-gray-300/90">
-              Scrap World has served the UAE market since 1983. Over decades, we have
+            <p className="mt-3 text-sm leading-7 text-gray-300/90">
+              Al Farwania has served the UAE market since 1983. Over decades, we have
               maintained uncompromised quality, long‑term relationships and strong
               environmental stewardship.
             </p>
@@ -108,7 +113,7 @@ const Footer: React.FC = () => {
       {/* Bottom bar */}
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-400">Copyright © {year} - Scrap World</p>
+          <p className="text-xs text-gray-400">Copyright © {year} - Al Farwania</p>
           <div className="flex items-center gap-4 text-xs text-gray-400">
             <Link href="#" className="hover:text-gray-200">Privacy</Link>
             <span className="text-gray-600">•</span>

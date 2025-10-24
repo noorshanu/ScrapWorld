@@ -4,26 +4,26 @@ import Topbar from "@/component/Topbar";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.scrapworld.example";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.alfarwania.example";
 
 
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Scrap World | Recyclable Metals & Materials",
-    template: "%s | Scrap World",
+    default: "Al Farwania | Surplus Assets & Materials",
+    template: "%s | Al Farwania",
   },
   description:
-    "Scrap World supplies and trades recyclable ferrous and non‑ferrous metals worldwide. Explore products, available stock, and export-ready logistics.",
+    "Al Farwania supplies and trades surplus assets and materials worldwide. Explore surplus categories, available inventory, and export‑ready logistics.",
   keywords: [
-    "scrap",
-    "scrap metal",
-    "ferrous",
-    "non‑ferrous",
-    "recycling",
+    "surplus",
+    "surplus inventory",
+    "liquidation",
+    "industrial surplus",
+    "asset recovery",
     "export",
-    "metal trading",
+    "global logistics",
   ],
   robots: {
     index: true,
@@ -42,26 +42,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Scrap World",
-    title: "Scrap World | Recyclable Metals & Materials",
+    siteName: "Al Farwania",
+    title: "Al Farwania | Surplus Assets & Materials",
     description:
-      "Supplier and trader of recyclable ferrous and non‑ferrous metals. Check products and available stock.",
+      "Supplier and trader of surplus assets and materials. Check surplus categories and available stock.",
     images: [
       {
         url: "/globe.svg",
         width: 1200,
         height: 630,
-        alt: "Scrap World",
+        alt: "Al Farwania",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@scrapworld",
-    creator: "@scrapworld",
-    title: "Scrap World | Recyclable Metals & Materials",
+    site: "@alfarwania",
+    creator: "@alfarwania",
+    title: "Al Farwania | Surplus Assets & Materials",
     description:
-      "Supplier and trader of recyclable ferrous and non‑ferrous metals. Check products and available stock.",
+      "Supplier and trader of surplus assets and materials. Check surplus categories and available stock.",
     images: ["/globe.svg"],
   },
 };
@@ -74,15 +74,15 @@ export default function RootLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Scrap World",
+    name: "Al Farwania",
     url: siteUrl,
-    logo: "/logo.png",
+    logo: "/logo.jpg",
   };
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Scrap World",
+    name: "Al Farwania",
     url: siteUrl,
   };
   return (

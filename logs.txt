@@ -1,0 +1,1675 @@
+0|cex-backend  | MEXC API Error: 403 /api/v3/time {
+0|cex-backend  |   message: 'Request failed with status code 403',
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   response: '<HTML><HEAD>\n' +
+0|cex-backend  |     '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |     '</HEAD><BODY>\n' +
+0|cex-backend  |     '<H1>Access Denied</H1>\n' +
+0|cex-backend  |     ' \n' +
+0|cex-backend  |     `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;time" on this server.<P>\n` +
+0|cex-backend  |     'Reference&#32;&#35;18&#46;2eab2c17&#46;1761235051&#46;8b127c96\n' +
+0|cex-backend  |     '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;2eab2c17&#46;1761235051&#46;8b127c96</P>\n' +
+0|cex-backend  |     '</BODY>\n' +
+0|cex-backend  |     '</HTML>\n'
+0|cex-backend  | }
+0|cex-backend  | Failed to sync time with MEXC server: AxiosError: Request failed with status code 403
+0|cex-backend  |     at settle (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:2090:12)
+0|cex-backend  |     at IncomingMessage.handleStreamEnd (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:3207:11)
+0|cex-backend  |     at IncomingMessage.emit (node:events:530:35)
+0|cex-backend  |     at endReadableNT (node:internal/streams/readable:1698:12)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+0|cex-backend  |     at Axios.request (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:4317:41)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   config: {
+0|cex-backend  |     transitional: {
+0|cex-backend  |       silentJSONParsing: true,
+0|cex-backend  |       forcedJSONParsing: true,
+0|cex-backend  |       clarifyTimeoutError: false
+0|cex-backend  |     },
+0|cex-backend  |     adapter: [ 'xhr', 'http', 'fetch' ],
+0|cex-backend  |     transformRequest: [ [Function: transformRequest] ],
+0|cex-backend  |     transformResponse: [ [Function: transformResponse] ],
+0|cex-backend  |     timeout: 20000,
+0|cex-backend  |     xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |     xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |     maxContentLength: -1,
+0|cex-backend  |     maxBodyLength: -1,
+0|cex-backend  |     env: { FormData: [Function [FormData]], Blob: [class Blob] },
+0|cex-backend  |     validateStatus: [Function: validateStatus],
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       Accept: 'application/json, text/plain, */*',
+0|cex-backend  |       'Content-Type': undefined,
+0|cex-backend  |       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+0|cex-backend  |       'Accept-Encoding': 'gzip, compress, deflate, br'
+0|cex-backend  |     },
+0|cex-backend  |     baseURL: 'https://api.mexc.com',
+0|cex-backend  |     httpAgent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 80,
+0|cex-backend  |       protocol: 'http:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype] {},
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 0,
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     httpsAgent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 443,
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype],
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 1,
+0|cex-backend  |       maxCachedSessions: 100,
+0|cex-backend  |       _sessionCache: [Object],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     method: 'get',
+0|cex-backend  |     url: '/api/v3/time',
+0|cex-backend  |     allowAbsoluteUrls: true,
+0|cex-backend  |     data: undefined
+0|cex-backend  |   },
+0|cex-backend  |   request: <ref *1> ClientRequest {
+0|cex-backend  |     _events: [Object: null prototype] {
+0|cex-backend  |       abort: [Function (anonymous)],
+0|cex-backend  |       aborted: [Function (anonymous)],
+0|cex-backend  |       connect: [Function (anonymous)],
+0|cex-backend  |       error: [Function (anonymous)],
+0|cex-backend  |       socket: [Function (anonymous)],
+0|cex-backend  |       timeout: [Function (anonymous)],
+0|cex-backend  |       finish: [Function: requestOnFinish]
+0|cex-backend  |     },
+0|cex-backend  |     _eventsCount: 7,
+0|cex-backend  |     _maxListeners: undefined,
+0|cex-backend  |     outputData: [],
+0|cex-backend  |     outputSize: 0,
+0|cex-backend  |     writable: true,
+0|cex-backend  |     destroyed: false,
+0|cex-backend  |     _last: true,
+0|cex-backend  |     chunkedEncoding: false,
+0|cex-backend  |     shouldKeepAlive: false,
+0|cex-backend  |     maxRequestsOnConnectionReached: false,
+0|cex-backend  |     _defaultKeepAlive: true,
+0|cex-backend  |     useChunkedEncodingByDefault: false,
+0|cex-backend  |     sendDate: false,
+0|cex-backend  |     _removedConnection: false,
+0|cex-backend  |     _removedContLen: false,
+0|cex-backend  |     _removedTE: false,
+0|cex-backend  |     strictContentLength: false,
+0|cex-backend  |     _contentLength: 0,
+0|cex-backend  |     _hasBody: true,
+0|cex-backend  |     _trailer: '',
+0|cex-backend  |     finished: true,
+0|cex-backend  |     _headerSent: true,
+0|cex-backend  |     _closed: false,
+0|cex-backend  |     _header: 'GET /api/v3/time HTTP/1.1\r\n' +
+0|cex-backend  |       'Accept: application/json, text/plain, */*\r\n' +
+0|cex-backend  |       'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |       'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |       'Host: api.mexc.com\r\n' +
+0|cex-backend  |       'Connection: keep-alive\r\n' +
+0|cex-backend  |       '\r\n',
+0|cex-backend  |     _keepAliveTimeout: 0,
+0|cex-backend  |     _onPendingData: [Function: nop],
+0|cex-backend  |     agent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 443,
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype],
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 1,
+0|cex-backend  |       maxCachedSessions: 100,
+0|cex-backend  |       _sessionCache: [Object],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     socketPath: undefined,
+0|cex-backend  |     method: 'GET',
+0|cex-backend  |     maxHeaderSize: undefined,
+0|cex-backend  |     insecureHTTPParser: undefined,
+0|cex-backend  |     joinDuplicateHeaders: undefined,
+0|cex-backend  |     path: '/api/v3/time',
+0|cex-backend  |     _ended: true,
+0|cex-backend  |     res: IncomingMessage {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       socket: [TLSSocket],
+0|cex-backend  |       httpVersionMajor: 1,
+0|cex-backend  |       httpVersionMinor: 1,
+0|cex-backend  |       httpVersion: '1.1',
+0|cex-backend  |       complete: true,
+0|cex-backend  |       rawHeaders: [Array],
+0|cex-backend  |       rawTrailers: [],
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       upgrade: false,
+0|cex-backend  |       url: '',
+0|cex-backend  |       method: null,
+0|cex-backend  |       statusCode: 403,
+0|cex-backend  |       statusMessage: 'Forbidden',
+0|cex-backend  |       client: [TLSSocket],
+0|cex-backend  |       _consuming: false,
+0|cex-backend  |       _dumped: false,
+0|cex-backend  |       req: [Circular *1],
+0|cex-backend  |       _eventsCount: 4,
+0|cex-backend  |       responseUrl: 'https://api.mexc.com/api/v3/time',
+0|cex-backend  |       redirects: [],
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kHeaders)]: [Object],
+0|cex-backend  |       [Symbol(kHeadersCount)]: 32,
+0|cex-backend  |       [Symbol(kTrailers)]: null,
+0|cex-backend  |       [Symbol(kTrailersCount)]: 0
+0|cex-backend  |     },
+0|cex-backend  |     aborted: false,
+0|cex-backend  |     timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |     upgradeOrConnect: false,
+0|cex-backend  |     parser: null,
+0|cex-backend  |     maxHeadersCount: null,
+0|cex-backend  |     reusedSocket: false,
+0|cex-backend  |     host: 'api.mexc.com',
+0|cex-backend  |     protocol: 'https:',
+0|cex-backend  |     _redirectable: Writable {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _options: [Object],
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       _ending: true,
+0|cex-backend  |       _redirectCount: 0,
+0|cex-backend  |       _redirects: [],
+0|cex-backend  |       _requestBodyLength: 0,
+0|cex-backend  |       _requestBodyBuffers: [],
+0|cex-backend  |       _eventsCount: 3,
+0|cex-backend  |       _onNativeResponse: [Function (anonymous)],
+0|cex-backend  |       _currentRequest: [Circular *1],
+0|cex-backend  |       _currentUrl: 'https://api.mexc.com/api/v3/time',
+0|cex-backend  |       _timeout: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(shapeMode)]: false,
+0|cex-backend  |     [Symbol(kCapture)]: false,
+0|cex-backend  |     [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |     [Symbol(kNeedDrain)]: false,
+0|cex-backend  |     [Symbol(corked)]: 0,
+0|cex-backend  |     [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |     [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |     [Symbol(kSocket)]: TLSSocket {
+0|cex-backend  |       _tlsOptions: [Object],
+0|cex-backend  |       _secureEstablished: true,
+0|cex-backend  |       _securePending: false,
+0|cex-backend  |       _newSessionPending: false,
+0|cex-backend  |       _controlReleased: true,
+0|cex-backend  |       secureConnecting: false,
+0|cex-backend  |       _SNICallback: null,
+0|cex-backend  |       servername: 'api.mexc.com',
+0|cex-backend  |       alpnProtocol: false,
+0|cex-backend  |       authorized: true,
+0|cex-backend  |       authorizationError: null,
+0|cex-backend  |       encrypted: true,
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 10,
+0|cex-backend  |       connecting: false,
+0|cex-backend  |       _hadError: false,
+0|cex-backend  |       _parent: null,
+0|cex-backend  |       _host: 'api.mexc.com',
+0|cex-backend  |       _closeAfterHandlingError: false,
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       allowHalfOpen: false,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _sockname: null,
+0|cex-backend  |       _pendingData: null,
+0|cex-backend  |       _pendingEncoding: '',
+0|cex-backend  |       server: undefined,
+0|cex-backend  |       _server: null,
+0|cex-backend  |       ssl: [TLSWrap],
+0|cex-backend  |       _requestCert: true,
+0|cex-backend  |       _rejectUnauthorized: true,
+0|cex-backend  |       timeout: 20000,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       _httpMessage: [Circular *1],
+0|cex-backend  |       autoSelectFamilyAttemptedAddresses: [Array],
+0|cex-backend  |       [Symbol(alpncallback)]: null,
+0|cex-backend  |       [Symbol(res)]: [TLSWrap],
+0|cex-backend  |       [Symbol(verified)]: true,
+0|cex-backend  |       [Symbol(pendingSession)]: null,
+0|cex-backend  |       [Symbol(async_id_symbol)]: 4800651,
+0|cex-backend  |       [Symbol(kHandle)]: [TLSWrap],
+0|cex-backend  |       [Symbol(lastWriteQueueSize)]: 0,
+0|cex-backend  |       [Symbol(timeout)]: Timeout {
+0|cex-backend  |         _idleTimeout: 20000,
+0|cex-backend  |         _idlePrev: [TimersList],
+0|cex-backend  |         _idleNext: [TimersList],
+0|cex-backend  |         _idleStart: 7493808,
+0|cex-backend  |         _onTimeout: [Function: bound ],
+0|cex-backend  |         _timerArgs: undefined,
+0|cex-backend  |         _repeat: null,
+0|cex-backend  |         _destroyed: false,
+0|cex-backend  |         [Symbol(refed)]: false,
+0|cex-backend  |         [Symbol(kHasPrimitive)]: false,
+0|cex-backend  |         [Symbol(asyncId)]: 4800660,
+0|cex-backend  |         [Symbol(triggerId)]: 4800655,
+0|cex-backend  |         [Symbol(kAsyncContextFrame)]: undefined
+0|cex-backend  |       },
+0|cex-backend  |       [Symbol(kBuffer)]: null,
+0|cex-backend  |       [Symbol(kBufferCb)]: null,
+0|cex-backend  |       [Symbol(kBufferGen)]: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kSetNoDelay)]: false,
+0|cex-backend  |       [Symbol(kSetKeepAlive)]: true,
+0|cex-backend  |       [Symbol(kSetKeepAliveInitialDelay)]: 60,
+0|cex-backend  |       [Symbol(kBytesRead)]: 0,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(connect-options)]: [Object]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(kOutHeaders)]: [Object: null prototype] {
+0|cex-backend  |       accept: [Array],
+0|cex-backend  |       'user-agent': [Array],
+0|cex-backend  |       'accept-encoding': [Array],
+0|cex-backend  |       host: [Array]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(errored)]: null,
+0|cex-backend  |     [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |     [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |     [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |   },
+0|cex-backend  |   response: {
+0|cex-backend  |     status: 403,
+0|cex-backend  |     statusText: 'Forbidden',
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       'mime-version': '1.0',
+0|cex-backend  |       'content-type': 'text/html',
+0|cex-backend  |       'content-length': '385',
+0|cex-backend  |       expires: 'Thu, 23 Oct 2025 15:57:31 GMT',
+0|cex-backend  |       'cache-control': 'max-age=0, no-cache, no-store',
+0|cex-backend  |       pragma: 'no-cache',
+0|cex-backend  |       date: 'Thu, 23 Oct 2025 15:57:31 GMT',
+0|cex-backend  |       connection: 'close',
+0|cex-backend  |       'server-timing': 'cdn-cache; desc=HIT, edge; dur=1, ak_p; desc="1761235051386_388803374_2333244566_17_11090_0_3_-";dur=1',
+0|cex-backend  |       'report-to': '{"group": "nel","max_age": 2592000, "endpoints": [{"url":"https://nel-cf.gotoda.co/nel/report"},{"url":"https://nel-akm.gotoda.co/nel/report"}]}',
+0|cex-backend  |       nel: '{"report_to": "nel", "max_age": 2592000, "response_headers":["Akami-Grn"] }',
+0|cex-backend  |       'access-control-expose-headers': 'x-cache',
+0|cex-backend  |       'x-cache': 'NotCacheable from child',
+0|cex-backend  |       'akamai-grn': '0.2eab2c17.1761235051.8b127c96'
+0|cex-backend  |     },
+0|cex-backend  |     config: {
+0|cex-backend  |       transitional: [Object],
+0|cex-backend  |       adapter: [Array],
+0|cex-backend  |       transformRequest: [Array],
+0|cex-backend  |       transformResponse: [Array],
+0|cex-backend  |       timeout: 20000,
+0|cex-backend  |       xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |       xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |       maxContentLength: -1,
+0|cex-backend  |       maxBodyLength: -1,
+0|cex-backend  |       env: [Object],
+0|cex-backend  |       validateStatus: [Function: validateStatus],
+0|cex-backend  |       headers: [Object [AxiosHeaders]],
+0|cex-backend  |       baseURL: 'https://api.mexc.com',
+0|cex-backend  |       httpAgent: [Agent],
+0|cex-backend  |       httpsAgent: [Agent],
+0|cex-backend  |       method: 'get',
+0|cex-backend  |       url: '/api/v3/time',
+0|cex-backend  |       allowAbsoluteUrls: true,
+0|cex-backend  |       data: undefined
+0|cex-backend  |     },
+0|cex-backend  |     request: <ref *1> ClientRequest {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 7,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       outputData: [],
+0|cex-backend  |       outputSize: 0,
+0|cex-backend  |       writable: true,
+0|cex-backend  |       destroyed: false,
+0|cex-backend  |       _last: true,
+0|cex-backend  |       chunkedEncoding: false,
+0|cex-backend  |       shouldKeepAlive: false,
+0|cex-backend  |       maxRequestsOnConnectionReached: false,
+0|cex-backend  |       _defaultKeepAlive: true,
+0|cex-backend  |       useChunkedEncodingByDefault: false,
+0|cex-backend  |       sendDate: false,
+0|cex-backend  |       _removedConnection: false,
+0|cex-backend  |       _removedContLen: false,
+0|cex-backend  |       _removedTE: false,
+0|cex-backend  |       strictContentLength: false,
+0|cex-backend  |       _contentLength: 0,
+0|cex-backend  |       _hasBody: true,
+0|cex-backend  |       _trailer: '',
+0|cex-backend  |       finished: true,
+0|cex-backend  |       _headerSent: true,
+0|cex-backend  |       _closed: false,
+0|cex-backend  |       _header: 'GET /api/v3/time HTTP/1.1\r\n' +
+0|cex-backend  |         'Accept: application/json, text/plain, */*\r\n' +
+0|cex-backend  |         'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |         'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |         'Host: api.mexc.com\r\n' +
+0|cex-backend  |         'Connection: keep-alive\r\n' +
+0|cex-backend  |         '\r\n',
+0|cex-backend  |       _keepAliveTimeout: 0,
+0|cex-backend  |       _onPendingData: [Function: nop],
+0|cex-backend  |       agent: [Agent],
+0|cex-backend  |       socketPath: undefined,
+0|cex-backend  |       method: 'GET',
+0|cex-backend  |       maxHeaderSize: undefined,
+0|cex-backend  |       insecureHTTPParser: undefined,
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       path: '/api/v3/time',
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       res: [IncomingMessage],
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |       upgradeOrConnect: false,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       maxHeadersCount: null,
+0|cex-backend  |       reusedSocket: false,
+0|cex-backend  |       host: 'api.mexc.com',
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       _redirectable: [Writable],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(kNeedDrain)]: false,
+0|cex-backend  |       [Symbol(corked)]: 0,
+0|cex-backend  |       [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |       [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |       [Symbol(kSocket)]: [TLSSocket],
+0|cex-backend  |       [Symbol(kOutHeaders)]: [Object: null prototype],
+0|cex-backend  |       [Symbol(errored)]: null,
+0|cex-backend  |       [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |       [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |       [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |     },
+0|cex-backend  |     data: '<HTML><HEAD>\n' +
+0|cex-backend  |       '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |       '</HEAD><BODY>\n' +
+0|cex-backend  |       '<H1>Access Denied</H1>\n' +
+0|cex-backend  |       ' \n' +
+0|cex-backend  |       `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;time" on this server.<P>\n` +
+0|cex-backend  |       'Reference&#32;&#35;18&#46;2eab2c17&#46;1761235051&#46;8b127c96\n' +
+0|cex-backend  |       '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;2eab2c17&#46;1761235051&#46;8b127c96</P>\n' +
+0|cex-backend  |       '</BODY>\n' +
+0|cex-backend  |       '</HTML>\n'
+0|cex-backend  |   },
+0|cex-backend  |   status: 403
+0|cex-backend  | }
+0|cex-backend  | MEXC API Request: GET /api/v3/account?timestamp=1761235051391&recvWindow=60000&signature=18559e53e3369fecca0125651dbcf372c6e39b0c60499b709d60e7f1472d2bc1
+0|cex-backend  | MEXC API Error: 403 /api/v3/account?timestamp=1761235051391&recvWindow=60000&signature=18559e53e3369fecca0125651dbcf372c6e39b0c60499b709d60e7f1472d2bc1 {
+0|cex-backend  |   message: 'Request failed with status code 403',
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   response: '<HTML><HEAD>\n' +
+0|cex-backend  |     '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |     '</HEAD><BODY>\n' +
+0|cex-backend  |     '<H1>Access Denied</H1>\n' +
+0|cex-backend  |     ' \n' +
+0|cex-backend  |     `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;account&#63;" on this server.<P>\n` +
+0|cex-backend  |     'Reference&#32;&#35;18&#46;35ab2c17&#46;1761235051&#46;3339e216\n' +
+0|cex-backend  |     '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;35ab2c17&#46;1761235051&#46;3339e216</P>\n' +
+0|cex-backend  |     '</BODY>\n' +
+0|cex-backend  |     '</HTML>\n'
+0|cex-backend  | }
+0|cex-backend  | MEXC API retry 1/3 for getBalance after 1468ms
+0|cex-backend  | 🚀 TRIGGERING TRADING: Project 68f92bd6cf112c79e265a278 has 1 trade settings
+0|cex-backend  | 🚀 TRIGGERING TRADE for setting: 68f92bd6cf112c79e265a27a
+0|cex-backend  | 📊 Ticker request received: MEXC - FLOKI_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.467Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $110015.36
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $110015.36 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | Failed to parse JSON: {
+0|cex-backend  |   name: 'SyntaxError',
+0|cex-backend  |   message: "Unexpected '<'",
+0|cex-backend  |   at: 1,
+0|cex-backend  |   text: '<HTML><HEAD>\n' +
+0|cex-backend  |     '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |     '</HEAD><BODY>\n' +
+0|cex-backend  |     '<H1>Access Denied</H1>\n' +
+0|cex-backend  |     ' \n' +
+0|cex-backend  |     `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;defaultSymbols" on this server.<P>\n` +
+0|cex-backend  |     'Reference&#32;&#35;18&#46;2eab2c17&#46;1761235051&#46;8b12842e\n' +
+0|cex-backend  |     '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;2eab2c17&#46;1761235051&#46;8b12842e</P>\n' +
+0|cex-backend  |     '</BODY>\n' +
+0|cex-backend  |     '</HTML>\n'
+0|cex-backend  | }
+0|cex-backend  | ❌ Failed to fetch MEXC supported symbols: AxiosError: Request failed with status code 403
+0|cex-backend  |     at settle (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:2090:12)
+0|cex-backend  |     at IncomingMessage.handleStreamEnd (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:3207:11)
+0|cex-backend  |     at IncomingMessage.emit (node:events:530:35)
+0|cex-backend  |     at endReadableNT (node:internal/streams/readable:1698:12)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+0|cex-backend  |     at Axios.request (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:4317:41)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   config: {
+0|cex-backend  |     transitional: {
+0|cex-backend  |       silentJSONParsing: true,
+0|cex-backend  |       forcedJSONParsing: true,
+0|cex-backend  |       clarifyTimeoutError: false
+0|cex-backend  |     },
+0|cex-backend  |     adapter: [ 'xhr', 'http', 'fetch' ],
+0|cex-backend  |     transformRequest: [ [Function: transformRequest] ],
+0|cex-backend  |     transformResponse: [ [Function (anonymous)] ],
+0|cex-backend  |     timeout: 10000,
+0|cex-backend  |     xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |     xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |     maxContentLength: -1,
+0|cex-backend  |     maxBodyLength: -1,
+0|cex-backend  |     env: { FormData: [Function [FormData]], Blob: [class Blob] },
+0|cex-backend  |     validateStatus: [Function: validateStatus],
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       Accept: 'application/json',
+0|cex-backend  |       'Content-Type': undefined,
+0|cex-backend  |       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+0|cex-backend  |       'Accept-Encoding': 'gzip, compress, deflate, br'
+0|cex-backend  |     },
+0|cex-backend  |     method: 'get',
+0|cex-backend  |     url: 'https://api.mexc.com/api/v3/defaultSymbols',
+0|cex-backend  |     allowAbsoluteUrls: true,
+0|cex-backend  |     data: undefined
+0|cex-backend  |   },
+0|cex-backend  |   request: <ref *1> ClientRequest {
+0|cex-backend  |     _events: [Object: null prototype] {
+0|cex-backend  |       abort: [Function (anonymous)],
+0|cex-backend  |       aborted: [Function (anonymous)],
+0|cex-backend  |       connect: [Function (anonymous)],
+0|cex-backend  |       error: [Function (anonymous)],
+0|cex-backend  |       socket: [Function (anonymous)],
+0|cex-backend  |       timeout: [Function (anonymous)],
+0|cex-backend  |       finish: [Function: requestOnFinish]
+0|cex-backend  |     },
+0|cex-backend  |     _eventsCount: 7,
+0|cex-backend  |     _maxListeners: undefined,
+0|cex-backend  |     outputData: [],
+0|cex-backend  |     outputSize: 0,
+0|cex-backend  |     writable: true,
+0|cex-backend  |     destroyed: false,
+0|cex-backend  |     _last: true,
+0|cex-backend  |     chunkedEncoding: false,
+0|cex-backend  |     shouldKeepAlive: false,
+0|cex-backend  |     maxRequestsOnConnectionReached: false,
+0|cex-backend  |     _defaultKeepAlive: true,
+0|cex-backend  |     useChunkedEncodingByDefault: false,
+0|cex-backend  |     sendDate: false,
+0|cex-backend  |     _removedConnection: false,
+0|cex-backend  |     _removedContLen: false,
+0|cex-backend  |     _removedTE: false,
+0|cex-backend  |     strictContentLength: false,
+0|cex-backend  |     _contentLength: 0,
+0|cex-backend  |     _hasBody: true,
+0|cex-backend  |     _trailer: '',
+0|cex-backend  |     finished: true,
+0|cex-backend  |     _headerSent: true,
+0|cex-backend  |     _closed: false,
+0|cex-backend  |     _header: 'GET /api/v3/defaultSymbols HTTP/1.1\r\n' +
+0|cex-backend  |       'Accept: application/json\r\n' +
+0|cex-backend  |       'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |       'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |       'Host: api.mexc.com\r\n' +
+0|cex-backend  |       'Connection: keep-alive\r\n' +
+0|cex-backend  |       '\r\n',
+0|cex-backend  |     _keepAliveTimeout: 0,
+0|cex-backend  |     _onPendingData: [Function: nop],
+0|cex-backend  |     agent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 443,
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype],
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: Infinity,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 1,
+0|cex-backend  |       maxCachedSessions: 100,
+0|cex-backend  |       _sessionCache: [Object],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     socketPath: undefined,
+0|cex-backend  |     method: 'GET',
+0|cex-backend  |     maxHeaderSize: undefined,
+0|cex-backend  |     insecureHTTPParser: undefined,
+0|cex-backend  |     joinDuplicateHeaders: undefined,
+0|cex-backend  |     path: '/api/v3/defaultSymbols',
+0|cex-backend  |     _ended: true,
+0|cex-backend  |     res: IncomingMessage {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       socket: [TLSSocket],
+0|cex-backend  |       httpVersionMajor: 1,
+0|cex-backend  |       httpVersionMinor: 1,
+0|cex-backend  |       httpVersion: '1.1',
+0|cex-backend  |       complete: true,
+0|cex-backend  |       rawHeaders: [Array],
+0|cex-backend  |       rawTrailers: [],
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       upgrade: false,
+0|cex-backend  |       url: '',
+0|cex-backend  |       method: null,
+0|cex-backend  |       statusCode: 403,
+0|cex-backend  |       statusMessage: 'Forbidden',
+0|cex-backend  |       client: [TLSSocket],
+0|cex-backend  |       _consuming: false,
+0|cex-backend  |       _dumped: false,
+0|cex-backend  |       req: [Circular *1],
+0|cex-backend  |       _eventsCount: 4,
+0|cex-backend  |       responseUrl: 'https://api.mexc.com/api/v3/defaultSymbols',
+0|cex-backend  |       redirects: [],
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kHeaders)]: [Object],
+0|cex-backend  |       [Symbol(kHeadersCount)]: 32,
+0|cex-backend  |       [Symbol(kTrailers)]: null,
+0|cex-backend  |       [Symbol(kTrailersCount)]: 0
+0|cex-backend  |     },
+0|cex-backend  |     aborted: false,
+0|cex-backend  |     timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |     upgradeOrConnect: false,
+0|cex-backend  |     parser: null,
+0|cex-backend  |     maxHeadersCount: null,
+0|cex-backend  |     reusedSocket: false,
+0|cex-backend  |     host: 'api.mexc.com',
+0|cex-backend  |     protocol: 'https:',
+0|cex-backend  |     _redirectable: Writable {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _options: [Object],
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       _ending: true,
+0|cex-backend  |       _redirectCount: 0,
+0|cex-backend  |       _redirects: [],
+0|cex-backend  |       _requestBodyLength: 0,
+0|cex-backend  |       _requestBodyBuffers: [],
+0|cex-backend  |       _eventsCount: 3,
+0|cex-backend  |       _onNativeResponse: [Function (anonymous)],
+0|cex-backend  |       _currentRequest: [Circular *1],
+0|cex-backend  |       _currentUrl: 'https://api.mexc.com/api/v3/defaultSymbols',
+0|cex-backend  |       _timeout: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(shapeMode)]: false,
+0|cex-backend  |     [Symbol(kCapture)]: false,
+0|cex-backend  |     [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |     [Symbol(kNeedDrain)]: false,
+0|cex-backend  |     [Symbol(corked)]: 0,
+0|cex-backend  |     [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |     [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |     [Symbol(kSocket)]: TLSSocket {
+0|cex-backend  |       _tlsOptions: [Object],
+0|cex-backend  |       _secureEstablished: true,
+0|cex-backend  |       _securePending: false,
+0|cex-backend  |       _newSessionPending: false,
+0|cex-backend  |       _controlReleased: true,
+0|cex-backend  |       secureConnecting: false,
+0|cex-backend  |       _SNICallback: null,
+0|cex-backend  |       servername: 'api.mexc.com',
+0|cex-backend  |       alpnProtocol: false,
+0|cex-backend  |       authorized: true,
+0|cex-backend  |       authorizationError: null,
+0|cex-backend  |       encrypted: true,
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 10,
+0|cex-backend  |       connecting: false,
+0|cex-backend  |       _hadError: false,
+0|cex-backend  |       _parent: null,
+0|cex-backend  |       _host: 'api.mexc.com',
+0|cex-backend  |       _closeAfterHandlingError: false,
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       allowHalfOpen: false,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _sockname: null,
+0|cex-backend  |       _pendingData: null,
+0|cex-backend  |       _pendingEncoding: '',
+0|cex-backend  |       server: undefined,
+0|cex-backend  |       _server: null,
+0|cex-backend  |       ssl: [TLSWrap],
+0|cex-backend  |       _requestCert: true,
+0|cex-backend  |       _rejectUnauthorized: true,
+0|cex-backend  |       timeout: 10000,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       _httpMessage: [Circular *1],
+0|cex-backend  |       autoSelectFamilyAttemptedAddresses: [Array],
+0|cex-backend  |       [Symbol(alpncallback)]: null,
+0|cex-backend  |       [Symbol(res)]: [TLSWrap],
+0|cex-backend  |       [Symbol(verified)]: true,
+0|cex-backend  |       [Symbol(pendingSession)]: null,
+0|cex-backend  |       [Symbol(async_id_symbol)]: 4800832,
+0|cex-backend  |       [Symbol(kHandle)]: [TLSWrap],
+0|cex-backend  |       [Symbol(lastWriteQueueSize)]: 0,
+0|cex-backend  |       [Symbol(timeout)]: Timeout {
+0|cex-backend  |         _idleTimeout: 10000,
+0|cex-backend  |         _idlePrev: [TimersList],
+0|cex-backend  |         _idleNext: [Timeout],
+0|cex-backend  |         _idleStart: 7493905,
+0|cex-backend  |         _onTimeout: [Function: bound ],
+0|cex-backend  |         _timerArgs: undefined,
+0|cex-backend  |         _repeat: null,
+0|cex-backend  |         _destroyed: false,
+0|cex-backend  |         [Symbol(refed)]: false,
+0|cex-backend  |         [Symbol(kHasPrimitive)]: false,
+0|cex-backend  |         [Symbol(asyncId)]: 4800841,
+0|cex-backend  |         [Symbol(triggerId)]: 4800836,
+0|cex-backend  |         [Symbol(kAsyncContextFrame)]: undefined
+0|cex-backend  |       },
+0|cex-backend  |       [Symbol(kBuffer)]: null,
+0|cex-backend  |       [Symbol(kBufferCb)]: null,
+0|cex-backend  |       [Symbol(kBufferGen)]: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kSetNoDelay)]: false,
+0|cex-backend  |       [Symbol(kSetKeepAlive)]: true,
+0|cex-backend  |       [Symbol(kSetKeepAliveInitialDelay)]: 60,
+0|cex-backend  |       [Symbol(kBytesRead)]: 0,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(connect-options)]: [Object]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(kOutHeaders)]: [Object: null prototype] {
+0|cex-backend  |       accept: [Array],
+0|cex-backend  |       'user-agent': [Array],
+0|cex-backend  |       'accept-encoding': [Array],
+0|cex-backend  |       host: [Array]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(errored)]: null,
+0|cex-backend  |     [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |     [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |     [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |   },
+0|cex-backend  |   response: {
+0|cex-backend  |     status: 403,
+0|cex-backend  |     statusText: 'Forbidden',
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       'mime-version': '1.0',
+0|cex-backend  |       'content-type': 'text/html',
+0|cex-backend  |       'content-length': '395',
+0|cex-backend  |       expires: 'Thu, 23 Oct 2025 15:57:31 GMT',
+0|cex-backend  |       'cache-control': 'max-age=0, no-cache, no-store',
+0|cex-backend  |       pragma: 'no-cache',
+0|cex-backend  |       date: 'Thu, 23 Oct 2025 15:57:31 GMT',
+0|cex-backend  |       connection: 'close',
+0|cex-backend  |       'server-timing': 'cdn-cache; desc=HIT, edge; dur=1, ak_p; desc="1761235051482_388803374_2333246510_17_12259_0_2_-";dur=1',
+0|cex-backend  |       'report-to': '{"group": "nel","max_age": 2592000, "endpoints": [{"url":"https://nel-cf.gotoda.co/nel/report"},{"url":"https://nel-akm.gotoda.co/nel/report"}]}',
+0|cex-backend  |       nel: '{"report_to": "nel", "max_age": 2592000, "response_headers":["Akami-Grn"] }',
+0|cex-backend  |       'access-control-expose-headers': 'x-cache',
+0|cex-backend  |       'x-cache': 'Error from child',
+0|cex-backend  |       'akamai-grn': '0.2eab2c17.1761235051.8b12842e'
+0|cex-backend  |     },
+0|cex-backend  |     config: {
+0|cex-backend  |       transitional: [Object],
+0|cex-backend  |       adapter: [Array],
+0|cex-backend  |       transformRequest: [Array],
+0|cex-backend  |       transformResponse: [Array],
+0|cex-backend  |       timeout: 10000,
+0|cex-backend  |       xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |       xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |       maxContentLength: -1,
+0|cex-backend  |       maxBodyLength: -1,
+0|cex-backend  |       env: [Object],
+0|cex-backend  |       validateStatus: [Function: validateStatus],
+0|cex-backend  |       headers: [Object [AxiosHeaders]],
+0|cex-backend  |       method: 'get',
+0|cex-backend  |       url: 'https://api.mexc.com/api/v3/defaultSymbols',
+0|cex-backend  |       allowAbsoluteUrls: true,
+0|cex-backend  |       data: undefined
+0|cex-backend  |     },
+0|cex-backend  |     request: <ref *1> ClientRequest {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 7,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       outputData: [],
+0|cex-backend  |       outputSize: 0,
+0|cex-backend  |       writable: true,
+0|cex-backend  |       destroyed: false,
+0|cex-backend  |       _last: true,
+0|cex-backend  |       chunkedEncoding: false,
+0|cex-backend  |       shouldKeepAlive: false,
+0|cex-backend  |       maxRequestsOnConnectionReached: false,
+0|cex-backend  |       _defaultKeepAlive: true,
+0|cex-backend  |       useChunkedEncodingByDefault: false,
+0|cex-backend  |       sendDate: false,
+0|cex-backend  |       _removedConnection: false,
+0|cex-backend  |       _removedContLen: false,
+0|cex-backend  |       _removedTE: false,
+0|cex-backend  |       strictContentLength: false,
+0|cex-backend  |       _contentLength: 0,
+0|cex-backend  |       _hasBody: true,
+0|cex-backend  |       _trailer: '',
+0|cex-backend  |       finished: true,
+0|cex-backend  |       _headerSent: true,
+0|cex-backend  |       _closed: false,
+0|cex-backend  |       _header: 'GET /api/v3/defaultSymbols HTTP/1.1\r\n' +
+0|cex-backend  |         'Accept: application/json\r\n' +
+0|cex-backend  |         'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |         'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |         'Host: api.mexc.com\r\n' +
+0|cex-backend  |         'Connection: keep-alive\r\n' +
+0|cex-backend  |         '\r\n',
+0|cex-backend  |       _keepAliveTimeout: 0,
+0|cex-backend  |       _onPendingData: [Function: nop],
+0|cex-backend  |       agent: [Agent],
+0|cex-backend  |       socketPath: undefined,
+0|cex-backend  |       method: 'GET',
+0|cex-backend  |       maxHeaderSize: undefined,
+0|cex-backend  |       insecureHTTPParser: undefined,
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       path: '/api/v3/defaultSymbols',
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       res: [IncomingMessage],
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |       upgradeOrConnect: false,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       maxHeadersCount: null,
+0|cex-backend  |       reusedSocket: false,
+0|cex-backend  |       host: 'api.mexc.com',
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       _redirectable: [Writable],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(kNeedDrain)]: false,
+0|cex-backend  |       [Symbol(corked)]: 0,
+0|cex-backend  |       [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |       [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |       [Symbol(kSocket)]: [TLSSocket],
+0|cex-backend  |       [Symbol(kOutHeaders)]: [Object: null prototype],
+0|cex-backend  |       [Symbol(errored)]: null,
+0|cex-backend  |       [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |       [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |       [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |     },
+0|cex-backend  |     data: '<HTML><HEAD>\n' +
+0|cex-backend  |       '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |       '</HEAD><BODY>\n' +
+0|cex-backend  |       '<H1>Access Denied</H1>\n' +
+0|cex-backend  |       ' \n' +
+0|cex-backend  |       `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;defaultSymbols" on this server.<P>\n` +
+0|cex-backend  |       'Reference&#32;&#35;18&#46;2eab2c17&#46;1761235051&#46;8b12842e\n' +
+0|cex-backend  |       '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;2eab2c17&#46;1761235051&#46;8b12842e</P>\n' +
+0|cex-backend  |       '</BODY>\n' +
+0|cex-backend  |       '</HTML>\n'
+0|cex-backend  |   },
+0|cex-backend  |   status: 403
+0|cex-backend  | }
+0|cex-backend  | MEXC: Symbol FLOKI_USDT not supported
+0|cex-backend  | 🔍 [BITMART] Found 3 exchanges in database
+0|cex-backend  | 🔍 [BITMART] Exchange 688facff262dcabf23a72853 has 0 projects: []
+0|cex-backend  | 🔍 [BITMART] Exchange 68984e659a816023021886f8 has 2 projects: [ 'ONI_USDT', 'INF_USDT' ]
+0|cex-backend  | 🔍 [BITMART] Exchange 68aee3da628cb9d06da33a98 has 4 projects: [ 'INF_USDT', 'ONI_USDT', 'TJRM_USDT', 'BRG_USDT' ]
+0|cex-backend  | 🔍 [BITMART] Total unique symbols found: [ 'ONI_USDT', 'INF_USDT', 'TJRM_USDT', 'BRG_USDT' ]
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.550Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.558Z] [INFO] [GATE] Processing orderbook for BCUT_USDT - Market Price: $0.009389
+0|cex-backend  | 💰 [GATE] BCUT_USDT - Current Price: $0.009389 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for BCUT_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for BCUT_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for BCUT_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.643Z] [INFO] [MEXC] Protobuf WebSocket connected -> wss://wbs-api.mexc.com/ws
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.644Z] [INFO] [MEXC] Subscribed to 20 symbol(s): GALAXIS_USDT, GAMESTOP_USDT, NEI_USDT, COPI_USDT, FURY_USDT …
+0|cex-backend  | ⚠️ [2025-10-23T15:57:31.726Z] [INFO] [MEXC] WARNING: Failed to decode Protobuf message, falling back to REST
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.756Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.782Z] [INFO] [LBANK] Processing orderbook for XLM_USDT - Market Price: $2.331e-9
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for XLM_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for XLM_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for XLM_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.788Z] [INFO] [LBANK] Processing orderbook for BTC_USDT - Market Price: $2.331e-9
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BTC_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for BTC_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for BTC_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.798Z] [INFO] [LBANK] Processing orderbook for ZEUS1_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] ZEUS1_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for ZEUS1_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for ZEUS1_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for ZEUS1_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:31.804Z] [INFO] [LBANK] Processing orderbook for BONK_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] BONK_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | ✅ [LBANK] BONK_USDT - Target reached: sold 604477/604477 tokens
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BONK_USDT
+0|cex-backend  | 🔍 [LBANK] Found 1 active trade settings for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Processing trade setting 689ddc15365c2db2b2aa156a for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Checking trading opportunities for BONK_USDT - User: 689b96eb34e609ee7cb43235
+0|cex-backend  | 🔍 [LBANK] API Key Debug - User: 689b96eb34e609ee7cb43235, Exchange: LBANK
+0|cex-backend  | 🔍 [LBANK] Total user API keys: 2
+0|cex-backend  | 🔍 [LBANK] Filtered LBANK keys: 1
+0|cex-backend  | 🔍 [LBANK] First key - Access: ✅, Secret: ✅
+0|cex-backend  | 🔐 [LBANK] Successfully decrypted API secret key for user 689b96eb34e609ee7cb43235
+0|cex-backend  | ⏰ [LBANK] BONK_USDT - Waiting 89s more (minTimeGap: 3min) | Last trade: 6:56:00 PM
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.040Z] [INFO] [GATE] Processing orderbook for MRLN_USDT - Market Price: $0.010665
+0|cex-backend  | 💰 [GATE] MRLN_USDT - Current Price: $0.010665 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for MRLN_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for MRLN_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for MRLN_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.160Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $110015.35
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $110015.35 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.373Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $110015.36
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $110015.36 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.380Z] [INFO] [LBANK] Processing orderbook for XLM_USDT - Market Price: $110015.36
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for XLM_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for XLM_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for XLM_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.381Z] [INFO] [LBANK] Processing orderbook for BTC_USDT - Market Price: $110015.36
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BTC_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for BTC_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for BTC_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.399Z] [INFO] [LBANK] Processing orderbook for ZEUS1_USDT - Market Price: $110015.36
+0|cex-backend  | 💰 [LBANK] ZEUS1_USDT - Current Price: $110015.36 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for ZEUS1_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for ZEUS1_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for ZEUS1_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.405Z] [INFO] [LBANK] Processing orderbook for BONK_USDT - Market Price: $110015.36
+0|cex-backend  | 💰 [LBANK] BONK_USDT - Current Price: $110015.36 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BONK_USDT
+0|cex-backend  | ✅ [LBANK] BONK_USDT - Target reached: sold 604477/604477 tokens
+0|cex-backend  | 🔍 [LBANK] Found 1 active trade settings for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Processing trade setting 689ddc15365c2db2b2aa156a for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Checking trading opportunities for BONK_USDT - User: 689b96eb34e609ee7cb43235
+0|cex-backend  | 🔍 [LBANK] API Key Debug - User: 689b96eb34e609ee7cb43235, Exchange: LBANK
+0|cex-backend  | 🔍 [LBANK] Total user API keys: 2
+0|cex-backend  | 🔍 [LBANK] Filtered LBANK keys: 1
+0|cex-backend  | 🔍 [LBANK] First key - Access: ✅, Secret: ✅
+0|cex-backend  | 🔐 [LBANK] Successfully decrypted API secret key for user 689b96eb34e609ee7cb43235
+0|cex-backend  | ⏰ [LBANK] BONK_USDT - Waiting 88s more (minTimeGap: 3min) | Last trade: 6:56:00 PM
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.598Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.617Z] [INFO] [SYSTEM] User connected to WebSocket
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.653Z] [INFO] [GATE] Processing orderbook for MRLN_USDT - Market Price: $0.010665
+0|cex-backend  | 💰 [GATE] MRLN_USDT - Current Price: $0.010665 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for MRLN_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for MRLN_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for MRLN_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.699Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.777Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.798Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.801Z] [INFO] [SYSTEM] Frontend subscribed to: MEXC - FLOKI_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.838Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.844Z] [INFO] [GATE] Processing orderbook for MRLN_USDT - Market Price: $0.01066
+0|cex-backend  | 💰 [GATE] MRLN_USDT - Current Price: $0.01066 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for MRLN_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for MRLN_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for MRLN_USDT
+0|cex-backend  | MEXC API Request: GET /api/v3/time
+0|cex-backend  | MEXC API Error: 403 /api/v3/time {
+0|cex-backend  |   message: 'Request failed with status code 403',
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   response: '<HTML><HEAD>\n' +
+0|cex-backend  |     '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |     '</HEAD><BODY>\n' +
+0|cex-backend  |     '<H1>Access Denied</H1>\n' +
+0|cex-backend  |     ' \n' +
+0|cex-backend  |     `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;time" on this server.<P>\n` +
+0|cex-backend  |     'Reference&#32;&#35;18&#46;35ab2c17&#46;1761235052&#46;333a61cb\n' +
+0|cex-backend  |     '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;35ab2c17&#46;1761235052&#46;333a61cb</P>\n' +
+0|cex-backend  |     '</BODY>\n' +
+0|cex-backend  |     '</HTML>\n'
+0|cex-backend  | }
+0|cex-backend  | Failed to sync time with MEXC server: AxiosError: Request failed with status code 403
+0|cex-backend  |     at settle (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:2090:12)
+0|cex-backend  |     at IncomingMessage.handleStreamEnd (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:3207:11)
+0|cex-backend  |     at IncomingMessage.emit (node:events:530:35)
+0|cex-backend  |     at endReadableNT (node:internal/streams/readable:1698:12)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+0|cex-backend  |     at Axios.request (/var/www/CEX-Trading-System-Backend/node_modules/axios/dist/node/axios.cjs:4317:41)
+0|cex-backend  |     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   config: {
+0|cex-backend  |     transitional: {
+0|cex-backend  |       silentJSONParsing: true,
+0|cex-backend  |       forcedJSONParsing: true,
+0|cex-backend  |       clarifyTimeoutError: false
+0|cex-backend  |     },
+0|cex-backend  |     adapter: [ 'xhr', 'http', 'fetch' ],
+0|cex-backend  |     transformRequest: [ [Function: transformRequest] ],
+0|cex-backend  |     transformResponse: [ [Function: transformResponse] ],
+0|cex-backend  |     timeout: 20000,
+0|cex-backend  |     xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |     xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |     maxContentLength: -1,
+0|cex-backend  |     maxBodyLength: -1,
+0|cex-backend  |     env: { FormData: [Function [FormData]], Blob: [class Blob] },
+0|cex-backend  |     validateStatus: [Function: validateStatus],
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       Accept: 'application/json, text/plain, */*',
+0|cex-backend  |       'Content-Type': undefined,
+0|cex-backend  |       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+0|cex-backend  |       'Accept-Encoding': 'gzip, compress, deflate, br'
+0|cex-backend  |     },
+0|cex-backend  |     baseURL: 'https://api.mexc.com',
+0|cex-backend  |     httpAgent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 80,
+0|cex-backend  |       protocol: 'http:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype] {},
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 0,
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     httpsAgent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 443,
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype],
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 1,
+0|cex-backend  |       maxCachedSessions: 100,
+0|cex-backend  |       _sessionCache: [Object],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     method: 'get',
+0|cex-backend  |     url: '/api/v3/time',
+0|cex-backend  |     allowAbsoluteUrls: true,
+0|cex-backend  |     data: undefined
+0|cex-backend  |   },
+0|cex-backend  |   request: <ref *1> ClientRequest {
+0|cex-backend  |     _events: [Object: null prototype] {
+0|cex-backend  |       abort: [Function (anonymous)],
+0|cex-backend  |       aborted: [Function (anonymous)],
+0|cex-backend  |       connect: [Function (anonymous)],
+0|cex-backend  |       error: [Function (anonymous)],
+0|cex-backend  |       socket: [Function (anonymous)],
+0|cex-backend  |       timeout: [Function (anonymous)],
+0|cex-backend  |       finish: [Function: requestOnFinish]
+0|cex-backend  |     },
+0|cex-backend  |     _eventsCount: 7,
+0|cex-backend  |     _maxListeners: undefined,
+0|cex-backend  |     outputData: [],
+0|cex-backend  |     outputSize: 0,
+0|cex-backend  |     writable: true,
+0|cex-backend  |     destroyed: false,
+0|cex-backend  |     _last: true,
+0|cex-backend  |     chunkedEncoding: false,
+0|cex-backend  |     shouldKeepAlive: false,
+0|cex-backend  |     maxRequestsOnConnectionReached: false,
+0|cex-backend  |     _defaultKeepAlive: true,
+0|cex-backend  |     useChunkedEncodingByDefault: false,
+0|cex-backend  |     sendDate: false,
+0|cex-backend  |     _removedConnection: false,
+0|cex-backend  |     _removedContLen: false,
+0|cex-backend  |     _removedTE: false,
+0|cex-backend  |     strictContentLength: false,
+0|cex-backend  |     _contentLength: 0,
+0|cex-backend  |     _hasBody: true,
+0|cex-backend  |     _trailer: '',
+0|cex-backend  |     finished: true,
+0|cex-backend  |     _headerSent: true,
+0|cex-backend  |     _closed: false,
+0|cex-backend  |     _header: 'GET /api/v3/time HTTP/1.1\r\n' +
+0|cex-backend  |       'Accept: application/json, text/plain, */*\r\n' +
+0|cex-backend  |       'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |       'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |       'Host: api.mexc.com\r\n' +
+0|cex-backend  |       'Connection: keep-alive\r\n' +
+0|cex-backend  |       '\r\n',
+0|cex-backend  |     _keepAliveTimeout: 0,
+0|cex-backend  |     _onPendingData: [Function: nop],
+0|cex-backend  |     agent: Agent {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 2,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       defaultPort: 443,
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       options: [Object: null prototype],
+0|cex-backend  |       requests: [Object: null prototype] {},
+0|cex-backend  |       sockets: [Object: null prototype],
+0|cex-backend  |       freeSockets: [Object: null prototype] {},
+0|cex-backend  |       keepAliveMsecs: 1000,
+0|cex-backend  |       keepAlive: true,
+0|cex-backend  |       maxSockets: 10,
+0|cex-backend  |       maxFreeSockets: 256,
+0|cex-backend  |       scheduling: 'lifo',
+0|cex-backend  |       maxTotalSockets: Infinity,
+0|cex-backend  |       totalSocketCount: 1,
+0|cex-backend  |       maxCachedSessions: 100,
+0|cex-backend  |       _sessionCache: [Object],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     socketPath: undefined,
+0|cex-backend  |     method: 'GET',
+0|cex-backend  |     maxHeaderSize: undefined,
+0|cex-backend  |     insecureHTTPParser: undefined,
+0|cex-backend  |     joinDuplicateHeaders: undefined,
+0|cex-backend  |     path: '/api/v3/time',
+0|cex-backend  |     _ended: true,
+0|cex-backend  |     res: IncomingMessage {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       socket: [TLSSocket],
+0|cex-backend  |       httpVersionMajor: 1,
+0|cex-backend  |       httpVersionMinor: 1,
+0|cex-backend  |       httpVersion: '1.1',
+0|cex-backend  |       complete: true,
+0|cex-backend  |       rawHeaders: [Array],
+0|cex-backend  |       rawTrailers: [],
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       upgrade: false,
+0|cex-backend  |       url: '',
+0|cex-backend  |       method: null,
+0|cex-backend  |       statusCode: 403,
+0|cex-backend  |       statusMessage: 'Forbidden',
+0|cex-backend  |       client: [TLSSocket],
+0|cex-backend  |       _consuming: false,
+0|cex-backend  |       _dumped: false,
+0|cex-backend  |       req: [Circular *1],
+0|cex-backend  |       _eventsCount: 4,
+0|cex-backend  |       responseUrl: 'https://api.mexc.com/api/v3/time',
+0|cex-backend  |       redirects: [],
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kHeaders)]: [Object],
+0|cex-backend  |       [Symbol(kHeadersCount)]: 32,
+0|cex-backend  |       [Symbol(kTrailers)]: null,
+0|cex-backend  |       [Symbol(kTrailersCount)]: 0
+0|cex-backend  |     },
+0|cex-backend  |     aborted: false,
+0|cex-backend  |     timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |     upgradeOrConnect: false,
+0|cex-backend  |     parser: null,
+0|cex-backend  |     maxHeadersCount: null,
+0|cex-backend  |     reusedSocket: false,
+0|cex-backend  |     host: 'api.mexc.com',
+0|cex-backend  |     protocol: 'https:',
+0|cex-backend  |     _redirectable: Writable {
+0|cex-backend  |       _events: [Object],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _options: [Object],
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       _ending: true,
+0|cex-backend  |       _redirectCount: 0,
+0|cex-backend  |       _redirects: [],
+0|cex-backend  |       _requestBodyLength: 0,
+0|cex-backend  |       _requestBodyBuffers: [],
+0|cex-backend  |       _eventsCount: 3,
+0|cex-backend  |       _onNativeResponse: [Function (anonymous)],
+0|cex-backend  |       _currentRequest: [Circular *1],
+0|cex-backend  |       _currentUrl: 'https://api.mexc.com/api/v3/time',
+0|cex-backend  |       _timeout: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(shapeMode)]: false,
+0|cex-backend  |     [Symbol(kCapture)]: false,
+0|cex-backend  |     [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |     [Symbol(kNeedDrain)]: false,
+0|cex-backend  |     [Symbol(corked)]: 0,
+0|cex-backend  |     [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |     [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |     [Symbol(kSocket)]: TLSSocket {
+0|cex-backend  |       _tlsOptions: [Object],
+0|cex-backend  |       _secureEstablished: true,
+0|cex-backend  |       _securePending: false,
+0|cex-backend  |       _newSessionPending: false,
+0|cex-backend  |       _controlReleased: true,
+0|cex-backend  |       secureConnecting: false,
+0|cex-backend  |       _SNICallback: null,
+0|cex-backend  |       servername: 'api.mexc.com',
+0|cex-backend  |       alpnProtocol: false,
+0|cex-backend  |       authorized: true,
+0|cex-backend  |       authorizationError: null,
+0|cex-backend  |       encrypted: true,
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 10,
+0|cex-backend  |       connecting: false,
+0|cex-backend  |       _hadError: false,
+0|cex-backend  |       _parent: null,
+0|cex-backend  |       _host: 'api.mexc.com',
+0|cex-backend  |       _closeAfterHandlingError: false,
+0|cex-backend  |       _readableState: [ReadableState],
+0|cex-backend  |       _writableState: [WritableState],
+0|cex-backend  |       allowHalfOpen: false,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       _sockname: null,
+0|cex-backend  |       _pendingData: null,
+0|cex-backend  |       _pendingEncoding: '',
+0|cex-backend  |       server: undefined,
+0|cex-backend  |       _server: null,
+0|cex-backend  |       ssl: [TLSWrap],
+0|cex-backend  |       _requestCert: true,
+0|cex-backend  |       _rejectUnauthorized: true,
+0|cex-backend  |       timeout: 20000,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       _httpMessage: [Circular *1],
+0|cex-backend  |       autoSelectFamilyAttemptedAddresses: [Array],
+0|cex-backend  |       [Symbol(alpncallback)]: null,
+0|cex-backend  |       [Symbol(res)]: [TLSWrap],
+0|cex-backend  |       [Symbol(verified)]: true,
+0|cex-backend  |       [Symbol(pendingSession)]: null,
+0|cex-backend  |       [Symbol(async_id_symbol)]: 4801479,
+0|cex-backend  |       [Symbol(kHandle)]: [TLSWrap],
+0|cex-backend  |       [Symbol(lastWriteQueueSize)]: 0,
+0|cex-backend  |       [Symbol(timeout)]: Timeout {
+0|cex-backend  |         _idleTimeout: 20000,
+0|cex-backend  |         _idlePrev: [TimersList],
+0|cex-backend  |         _idleNext: [TimersList],
+0|cex-backend  |         _idleStart: 7495318,
+0|cex-backend  |         _onTimeout: [Function: bound ],
+0|cex-backend  |         _timerArgs: undefined,
+0|cex-backend  |         _repeat: null,
+0|cex-backend  |         _destroyed: false,
+0|cex-backend  |         [Symbol(refed)]: false,
+0|cex-backend  |         [Symbol(kHasPrimitive)]: false,
+0|cex-backend  |         [Symbol(asyncId)]: 4801488,
+0|cex-backend  |         [Symbol(triggerId)]: 4801483,
+0|cex-backend  |         [Symbol(kAsyncContextFrame)]: undefined
+0|cex-backend  |       },
+0|cex-backend  |       [Symbol(kBuffer)]: null,
+0|cex-backend  |       [Symbol(kBufferCb)]: null,
+0|cex-backend  |       [Symbol(kBufferGen)]: null,
+0|cex-backend  |       [Symbol(shapeMode)]: true,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kSetNoDelay)]: false,
+0|cex-backend  |       [Symbol(kSetKeepAlive)]: true,
+0|cex-backend  |       [Symbol(kSetKeepAliveInitialDelay)]: 60,
+0|cex-backend  |       [Symbol(kBytesRead)]: 0,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(connect-options)]: [Object]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(kOutHeaders)]: [Object: null prototype] {
+0|cex-backend  |       accept: [Array],
+0|cex-backend  |       'user-agent': [Array],
+0|cex-backend  |       'accept-encoding': [Array],
+0|cex-backend  |       host: [Array]
+0|cex-backend  |     },
+0|cex-backend  |     [Symbol(errored)]: null,
+0|cex-backend  |     [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |     [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |     [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |   },
+0|cex-backend  |   response: {
+0|cex-backend  |     status: 403,
+0|cex-backend  |     statusText: 'Forbidden',
+0|cex-backend  |     headers: Object [AxiosHeaders] {
+0|cex-backend  |       'mime-version': '1.0',
+0|cex-backend  |       'content-type': 'text/html',
+0|cex-backend  |       'content-length': '385',
+0|cex-backend  |       expires: 'Thu, 23 Oct 2025 15:57:32 GMT',
+0|cex-backend  |       'cache-control': 'max-age=0, no-cache, no-store',
+0|cex-backend  |       pragma: 'no-cache',
+0|cex-backend  |       date: 'Thu, 23 Oct 2025 15:57:32 GMT',
+0|cex-backend  |       connection: 'close',
+0|cex-backend  |       'server-timing': 'cdn-cache; desc=HIT, edge; dur=1, ak_p; desc="1761235052894_388803381_859464139_20_10903_0_4_-";dur=1',
+0|cex-backend  |       'report-to': '{"group": "nel","max_age": 2592000, "endpoints": [{"url":"https://nel-cf.gotoda.co/nel/report"},{"url":"https://nel-akm.gotoda.co/nel/report"}]}',
+0|cex-backend  |       nel: '{"report_to": "nel", "max_age": 2592000, "response_headers":["Akami-Grn"] }',
+0|cex-backend  |       'access-control-expose-headers': 'x-cache',
+0|cex-backend  |       'x-cache': 'NotCacheable from child',
+0|cex-backend  |       'akamai-grn': '0.35ab2c17.1761235052.333a61cb'
+0|cex-backend  |     },
+0|cex-backend  |     config: {
+0|cex-backend  |       transitional: [Object],
+0|cex-backend  |       adapter: [Array],
+0|cex-backend  |       transformRequest: [Array],
+0|cex-backend  |       transformResponse: [Array],
+0|cex-backend  |       timeout: 20000,
+0|cex-backend  |       xsrfCookieName: 'XSRF-TOKEN',
+0|cex-backend  |       xsrfHeaderName: 'X-XSRF-TOKEN',
+0|cex-backend  |       maxContentLength: -1,
+0|cex-backend  |       maxBodyLength: -1,
+0|cex-backend  |       env: [Object],
+0|cex-backend  |       validateStatus: [Function: validateStatus],
+0|cex-backend  |       headers: [Object [AxiosHeaders]],
+0|cex-backend  |       baseURL: 'https://api.mexc.com',
+0|cex-backend  |       httpAgent: [Agent],
+0|cex-backend  |       httpsAgent: [Agent],
+0|cex-backend  |       method: 'get',
+0|cex-backend  |       url: '/api/v3/time',
+0|cex-backend  |       allowAbsoluteUrls: true,
+0|cex-backend  |       data: undefined
+0|cex-backend  |     },
+0|cex-backend  |     request: <ref *1> ClientRequest {
+0|cex-backend  |       _events: [Object: null prototype],
+0|cex-backend  |       _eventsCount: 7,
+0|cex-backend  |       _maxListeners: undefined,
+0|cex-backend  |       outputData: [],
+0|cex-backend  |       outputSize: 0,
+0|cex-backend  |       writable: true,
+0|cex-backend  |       destroyed: false,
+0|cex-backend  |       _last: true,
+0|cex-backend  |       chunkedEncoding: false,
+0|cex-backend  |       shouldKeepAlive: false,
+0|cex-backend  |       maxRequestsOnConnectionReached: false,
+0|cex-backend  |       _defaultKeepAlive: true,
+0|cex-backend  |       useChunkedEncodingByDefault: false,
+0|cex-backend  |       sendDate: false,
+0|cex-backend  |       _removedConnection: false,
+0|cex-backend  |       _removedContLen: false,
+0|cex-backend  |       _removedTE: false,
+0|cex-backend  |       strictContentLength: false,
+0|cex-backend  |       _contentLength: 0,
+0|cex-backend  |       _hasBody: true,
+0|cex-backend  |       _trailer: '',
+0|cex-backend  |       finished: true,
+0|cex-backend  |       _headerSent: true,
+0|cex-backend  |       _closed: false,
+0|cex-backend  |       _header: 'GET /api/v3/time HTTP/1.1\r\n' +
+0|cex-backend  |         'Accept: application/json, text/plain, */*\r\n' +
+0|cex-backend  |         'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\r\n' +
+0|cex-backend  |         'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+0|cex-backend  |         'Host: api.mexc.com\r\n' +
+0|cex-backend  |         'Connection: keep-alive\r\n' +
+0|cex-backend  |         '\r\n',
+0|cex-backend  |       _keepAliveTimeout: 0,
+0|cex-backend  |       _onPendingData: [Function: nop],
+0|cex-backend  |       agent: [Agent],
+0|cex-backend  |       socketPath: undefined,
+0|cex-backend  |       method: 'GET',
+0|cex-backend  |       maxHeaderSize: undefined,
+0|cex-backend  |       insecureHTTPParser: undefined,
+0|cex-backend  |       joinDuplicateHeaders: undefined,
+0|cex-backend  |       path: '/api/v3/time',
+0|cex-backend  |       _ended: true,
+0|cex-backend  |       res: [IncomingMessage],
+0|cex-backend  |       aborted: false,
+0|cex-backend  |       timeoutCb: [Function: emitRequestTimeout],
+0|cex-backend  |       upgradeOrConnect: false,
+0|cex-backend  |       parser: null,
+0|cex-backend  |       maxHeadersCount: null,
+0|cex-backend  |       reusedSocket: false,
+0|cex-backend  |       host: 'api.mexc.com',
+0|cex-backend  |       protocol: 'https:',
+0|cex-backend  |       _redirectable: [Writable],
+0|cex-backend  |       [Symbol(shapeMode)]: false,
+0|cex-backend  |       [Symbol(kCapture)]: false,
+0|cex-backend  |       [Symbol(kBytesWritten)]: 0,
+0|cex-backend  |       [Symbol(kNeedDrain)]: false,
+0|cex-backend  |       [Symbol(corked)]: 0,
+0|cex-backend  |       [Symbol(kChunkedBuffer)]: [],
+0|cex-backend  |       [Symbol(kChunkedLength)]: 0,
+0|cex-backend  |       [Symbol(kSocket)]: [TLSSocket],
+0|cex-backend  |       [Symbol(kOutHeaders)]: [Object: null prototype],
+0|cex-backend  |       [Symbol(errored)]: null,
+0|cex-backend  |       [Symbol(kHighWaterMark)]: 65536,
+0|cex-backend  |       [Symbol(kRejectNonStandardBodyWrites)]: false,
+0|cex-backend  |       [Symbol(kUniqueHeaders)]: null
+0|cex-backend  |     },
+0|cex-backend  |     data: '<HTML><HEAD>\n' +
+0|cex-backend  |       '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |       '</HEAD><BODY>\n' +
+0|cex-backend  |       '<H1>Access Denied</H1>\n' +
+0|cex-backend  |       ' \n' +
+0|cex-backend  |       `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;time" on this server.<P>\n` +
+0|cex-backend  |       'Reference&#32;&#35;18&#46;35ab2c17&#46;1761235052&#46;333a61cb\n' +
+0|cex-backend  |       '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;35ab2c17&#46;1761235052&#46;333a61cb</P>\n' +
+0|cex-backend  |       '</BODY>\n' +
+0|cex-backend  |       '</HTML>\n'
+0|cex-backend  |   },
+0|cex-backend  |   status: 403
+0|cex-backend  | }
+0|cex-backend  | MEXC API Request: GET /api/v3/account?timestamp=1761235052901&recvWindow=60000&signature=fe5cfa20e143d65c63f94e7d74c87ac728153d911e2de93c91b389d6eacb79f2
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.937Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | MEXC API Error: 403 /api/v3/account?timestamp=1761235052901&recvWindow=60000&signature=fe5cfa20e143d65c63f94e7d74c87ac728153d911e2de93c91b389d6eacb79f2 {
+0|cex-backend  |   message: 'Request failed with status code 403',
+0|cex-backend  |   code: 'ERR_BAD_REQUEST',
+0|cex-backend  |   response: '<HTML><HEAD>\n' +
+0|cex-backend  |     '<TITLE>Access Denied</TITLE>\n' +
+0|cex-backend  |     '</HEAD><BODY>\n' +
+0|cex-backend  |     '<H1>Access Denied</H1>\n' +
+0|cex-backend  |     ' \n' +
+0|cex-backend  |     `You don't have permission to access "http&#58;&#47;&#47;api&#46;mexc&#46;com&#47;api&#47;v3&#47;account&#63;" on this server.<P>\n` +
+0|cex-backend  |     'Reference&#32;&#35;18&#46;27ab2c17&#46;1761235052&#46;b6b44c92\n' +
+0|cex-backend  |     '<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;27ab2c17&#46;1761235052&#46;b6b44c92</P>\n' +
+0|cex-backend  |     '</BODY>\n' +
+0|cex-backend  |     '</HTML>\n'
+0|cex-backend  | }
+0|cex-backend  | MEXC API retry 2/3 for getBalance after 2188ms
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.977Z] [INFO] [LBANK] Processing orderbook for XLM_USDT - Market Price: $2.331e-9
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for XLM_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.979Z] [INFO] [LBANK] Processing orderbook for BTC_USDT - Market Price: $2.331e-9
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for XLM_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for XLM_USDT
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BTC_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for BTC_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for BTC_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.980Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:32.996Z] [INFO] [LBANK] Processing orderbook for ZEUS1_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] ZEUS1_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for ZEUS1_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for ZEUS1_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for ZEUS1_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.006Z] [INFO] [LBANK] Processing orderbook for BONK_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] BONK_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BONK_USDT
+0|cex-backend  | ✅ [LBANK] BONK_USDT - Target reached: sold 604477/604477 tokens
+0|cex-backend  | 🔍 [LBANK] Found 1 active trade settings for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Processing trade setting 689ddc15365c2db2b2aa156a for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Checking trading opportunities for BONK_USDT - User: 689b96eb34e609ee7cb43235
+0|cex-backend  | 🔍 [LBANK] API Key Debug - User: 689b96eb34e609ee7cb43235, Exchange: LBANK
+0|cex-backend  | 🔍 [LBANK] Total user API keys: 2
+0|cex-backend  | 🔍 [LBANK] Filtered LBANK keys: 1
+0|cex-backend  | 🔍 [LBANK] First key - Access: ✅, Secret: ✅
+0|cex-backend  | 🔐 [LBANK] Successfully decrypted API secret key for user 689b96eb34e609ee7cb43235
+0|cex-backend  | ⏰ [LBANK] BONK_USDT - Waiting 87s more (minTimeGap: 3min) | Last trade: 6:56:00 PM
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.037Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.138Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.217Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.318Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.384Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $110015.35
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $110015.35 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | 📡 BITRUE Sent PONG to keep connection alive
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.557Z] [INFO] [GATE] Processing orderbook for BCUT_USDT - Market Price: $0.009389
+0|cex-backend  | 💰 [GATE] BCUT_USDT - Current Price: $0.009389 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for BCUT_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for BCUT_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for BCUT_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.581Z] [INFO] [LBANK] Processing orderbook for XLM_USDT - Market Price: $0.00001435
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.582Z] [INFO] [LBANK] Processing orderbook for BTC_USDT - Market Price: $0.00001435
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for XLM_USDT
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BTC_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for XLM_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for XLM_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for BTC_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for BTC_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.587Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $191.28
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $191.28 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.592Z] [INFO] [GATE] Processing orderbook for MRLN_USDT - Market Price: $0.01066
+0|cex-backend  | 💰 [GATE] MRLN_USDT - Current Price: $0.01066 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for MRLN_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for MRLN_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for MRLN_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.597Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.602Z] [INFO] [LBANK] Processing orderbook for ZEUS1_USDT - Market Price: $191.28
+0|cex-backend  | 💰 [LBANK] ZEUS1_USDT - Current Price: $191.28 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for ZEUS1_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for ZEUS1_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for ZEUS1_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.605Z] [INFO] [LBANK] Processing orderbook for BONK_USDT - Market Price: $191.28
+0|cex-backend  | 💰 [LBANK] BONK_USDT - Current Price: $191.28 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 1 matching projects for BONK_USDT
+0|cex-backend  | ✅ [LBANK] BONK_USDT - Target reached: sold 604477/604477 tokens
+0|cex-backend  | 🔍 [LBANK] Found 1 active trade settings for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Processing trade setting 689ddc15365c2db2b2aa156a for BONK_USDT
+0|cex-backend  | 🎯 [LBANK] Checking trading opportunities for BONK_USDT - User: 689b96eb34e609ee7cb43235
+0|cex-backend  | 🔍 [LBANK] API Key Debug - User: 689b96eb34e609ee7cb43235, Exchange: LBANK
+0|cex-backend  | 🔍 [LBANK] Total user API keys: 2
+0|cex-backend  | 🔍 [LBANK] Filtered LBANK keys: 1
+0|cex-backend  | 🔍 [LBANK] First key - Access: ✅, Secret: ✅
+0|cex-backend  | 🔐 [LBANK] Successfully decrypted API secret key for user 689b96eb34e609ee7cb43235
+0|cex-backend  | ⏰ [LBANK] BONK_USDT - Waiting 87s more (minTimeGap: 3min) | Last trade: 6:56:00 PM
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.698Z] [INFO] [GATE] Processing orderbook for THINK_USDT - Market Price: $0.00609
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 💰 [GATE] THINK_USDT - Current Price: $0.00609 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 2 matching projects for THINK_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for THINK_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for THINK_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.747Z] [INFO] [GATE] Processing orderbook for GX_USDT - Market Price: $0.00007967
+0|cex-backend  | 💰 [GATE] GX_USDT - Current Price: $0.00007967 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for GX_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for GX_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for GX_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.808Z] [INFO] [GATE] Processing orderbook for MRLN_USDT - Market Price: $0.01066
+0|cex-backend  | 💰 [GATE] MRLN_USDT - Current Price: $0.01066 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [GATE] Found 2 exchanges for type GATE
+0|cex-backend  | 🔍 [GATE] Found 1 matching projects for MRLN_USDT
+0|cex-backend  | 🔍 [GATE] Found 0 active trade settings for MRLN_USDT
+0|cex-backend  | ⚠️ [GATE] No active trade settings found for MRLN_USDT
+0|cex-backend  | ℹ️ [2025-10-23T15:57:33.991Z] [INFO] [LBANK] Processing orderbook for SOL_USDT - Market Price: $2.331e-9
+0|cex-backend  | 💰 [LBANK] SOL_USDT - Current Price: $2.331e-9 | Asks: 10 | Bids: 10
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges for type LBANK
+0|cex-backend  | 🔍 [LBANK] Found 3 matching projects for SOL_USDT
+0|cex-backend  | 🔍 [LBANK] Found 0 active trade settings for SOL_USDT
+0|cex-backend  | ⚠️ [LBANK] No active trade settings found for SOL_USDT
+0|cex-backend  | 🔍 [BITRUE] Found 1 exchanges in database
+0|cex-backend  | 🔍 [BITRUE] Exchange 68a051d2365c2db2b25c7750 has 1 projects: [ 'AIXRP_USDT' ]
+0|cex-backend  | 🔍 [BITRUE] Total unique symbols found: [ 'AIXRP_USDT' ]
+0|cex-backend  | 🔍 [XT] Found 2 exchanges in database
+0|cex-backend  | 🔍 [LBANK] Found 5 exchanges in database
+0|cex-backend  | 🔍 [XT] Exchange 688fad08262dcabf23a72861 has 0 projects: []
+0|cex-backend  | 🔍 [XT] Exchange 68924c5685216a69858601c6 has 0 projects: []
+0|cex-backend  | 🔍 [XT] Total unique symbols found: []
+0|cex-backend  | 🔍 [LBANK] Exchange 688fad03262dcabf23a7285c has 2 projects: [ 'ZEUS1_USDT', 'SC_USDT' ]
+0|cex-backend  | 🔍 [LBANK] Exchange 688fb6a33a6ea38196c134df has 1 projects: [ 'SOL_USDT' ]
+0|cex-backend  | 🔍 [LBANK] Exchange 6891d2fd46b1135949ab5355 has 5 projects: [ 'SOL_USDT', 'BTC_USDT', 'ZYGO_USDT', 'XLM_USDT', 'PEPECOIN_USDT' ]
+0|cex-backend  | 🔍 [LBANK] Exchange 689c8224d0f33facfd32f417 has 4 projects: [ 'SC_USDT', 'SOL_USDT', 'BONK_USDT', 'ASTER-USDT' ]
+0|cex-backend  | 🔍 [LBANK] Exchange 689e203f365c2db2b2bd4b5a has 0 projects: []
+0|cex-backend  | 🔍 [LBANK] Total unique symbols found: [
+0|cex-backend  |   'ZEUS1_USDT',
+0|cex-backend  |   'SC_USDT',
+0|cex-backend  |   'SOL_USDT',
+0|cex-backend  |   'BTC_USDT',
+0|cex-backend  |   'ZYGO_USDT',
+0|cex-backend  |   'XLM_USDT',
+0|cex-backend  |   'PEPECOIN_USDT',
+0|cex-backend  |   'BONK_USDT',
+0|cex-backend  |   'ASTER-USDT'
+0|cex-backend  | ]
+0|cex-backend  | 🔍 [MEXC] Found 4 exchanges in database
+0|cex-backend  | 🔍 [MEXC] Exchange 688facf6262dcabf23a72849 has 26 projects: [
+0|cex-backend  |   'MORI_USDT',      'GAU_USDT',
+0|cex-backend  |   'YTC_USDT',       'PEEZY_USDT',
+0|cex-backend  |   'NCN_USDT',       'CRU_USDT',
+0|cex-backend  |   'DEXTF_USDT',     'GURU_USDT',
+0|cex-backend  |   'OMI_USDT',       'DTEC_USDT',
+0|cex-backend  |   'SHARKCAT_USDT',  'MARSH_USDT',
+0|cex-backend  |   'H1_USDT',        'KINTO_USDT',
+0|cex-backend  |   'SERSH_USDT',     'OIK_USDT',
+0|cex-backend  |   'GGC_USDT',       'ETN_USDT',
+0|cex-backend  |   'LIQUIDIUM_USDT', 'MRLN_USDT',
+0|cex-backend  |   'GALAXIS_USDT',   'GAMESTOP_USDT',
+0|cex-backend  |   'NEI_USDT',       'COPI_USDT',
+0|cex-backend  |   'FURY_USDT',      'MMON_USDT'
+0|cex-backend  | ]
+0|cex-backend  | 🔍 [MEXC] Exchange 688fad2c262dcabf23a7287a has 28 projects: [
+0|cex-backend  |   'GSYS_USDT',      'ICBX_USDT',
+0|cex-backend  |   'WCO_USDT',       'PEEZY_USDT',
+0|cex-backend  |   'NCN_USDT',       'SEED_USDT',
+0|cex-backend  |   'GAU_USDT',       'PHOTO_USDT',
+0|cex-backend  |   'NODL_USDT',      'YTC_USDT',
+0|cex-backend  |   'OIK_USDT',       'DTEC_USDT',
+0|cex-backend  |   'ZYGO',           'H1_USDT',
+0|cex-backend  |   'SHARKCAT_USDT',  'MARSH_USDT',
+0|cex-backend  |   'EMR_USDT',       'COMAI_USDT',
+0|cex-backend  |   'BASEDAI_USDT',   'SHIRO_USDT',
+0|cex-backend  |   'ETN_USDT',       'BOATKID_USDT',
+0|cex-backend  |   'LIQUIDIUM_USDT', 'GALAXIS_USDT',
+0|cex-backend  |   'NEI_USDT',       'FURY_USDT',
+0|cex-backend  |   'MMON_USDT',      'DEOD_USDT'
+0|cex-backend  | ]
+0|cex-backend  | 🔍 [MEXC] Exchange 68909d22afda6390ef9785cd has 15 projects: [
+0|cex-backend  |   'WCO_USDT',      'ZYGO_USDT',
+0|cex-backend  |   'PEPECOIN_USDT', 'ICBX_USDT',
+0|cex-backend  |   'BASEDAI_USDT',  'GSYS_USDT',
+0|cex-backend  |   'PHOTO_USDT',    'PLMS_USDT',
+0|cex-backend  |   'NODL_USDT',     'SHIRO_USDT',
+0|cex-backend  |   'COMAI_USDT',    'BOATKID_USDT',
+0|cex-backend  |   'EMR_USDT',      'TJRM_USDT',
+0|cex-backend  |   'DEOD_USDT'
+0|cex-backend  | ]
+0|cex-backend  | 🔍 [MEXC] Exchange 689b96fe34e609ee7cb455f9 has 30 projects: [
+0|cex-backend  |   'ZYGO_USDT',     'SOL_USDT',
+0|cex-backend  |   'KINTO_USDT',    'SERSH_USDT',
+0|cex-backend  |   'GURU_USDT',     'COMAI_USDT',
+0|cex-backend  |   'EMR_USDT',      'GCC_USDT',
+0|cex-backend  |   'GGC_USDT',      'LIQUIDIUM_USDT',
+0|cex-backend  |   'THINK_USDT',    'ASTER-USDT',
+0|cex-backend  |   'GAMESTOP_USDT', 'FURY_USDT',
+0|cex-backend  |   'MMON_USDT',     'DEOD_USDT',
+0|cex-backend  |   'BCUT_USDT',     'DOGE_USDT',
+0|cex-backend  |   'ETH_USDT',      'HYPER_USDT',

@@ -8,7 +8,7 @@ import AboutCTA from "@/component/AboutUs/CTA";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Scrap World — operating since 1983, supplying recyclable ferrous and non‑ferrous metals with quality and reliable export logistics.",
+    "Learn about Al Farwania — operating since 1983, supplying surplus assets and materials with quality and reliable export logistics.",
 };
 
 export default function AboutPage() {

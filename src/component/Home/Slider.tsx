@@ -15,15 +15,15 @@ type Slide = {
 const SLIDES: Slide[] = [
   {
     src: "/Slider/banner_3.jpg",
-    alt: "Scrap yard banner 3",
+    alt: "Surplus assets banner 3",
     heading: "WELCOME TO",
-    subheading: "SCRAP WORLD",
+    subheading: "AL FARWANIA",
   },
   {
     src: "/Slider/banner_4.jpg",
-    alt: "Scrap yard banner 4",
+    alt: "Surplus assets banner 4",
     heading: "WELCOME TO",
-    subheading: "SCRAP WORLD",
+    subheading: "AL FARWANIA",
   },
 ];
 

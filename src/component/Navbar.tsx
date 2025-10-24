@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 select-none">
-            <Image src="/logo.png" width={180} height={70} alt="ScrapWorld" priority className="drop-shadow" />
+            <Image src="/logo.jpg" width={300} height={90} alt="ScrapWorld" priority className="drop-shadow" />
       
           </Link>
 

@@ -15,7 +15,7 @@ const AboutUs: React.FC = () => {
       <div className="container mx-auto px-4 py-12 sm:py-16">
         <header className="mb-8 sm:mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide text-gray-900">
-            ABOUT THE SCRAP WORLD
+            ABOUT AL FARWANIA
           </h2>
           <div className="mt-3 h-[3px] w-16 bg-gray-800/80" />
         </header>
@@ -24,8 +24,7 @@ const AboutUs: React.FC = () => {
           {/* Text content */}
           <article className="lg:col-span-7 text-gray-700 leading-relaxed" itemProp="description">
             <p className="mb-4">
-              Scrap World, our company is no new to introduction in the UAE market as we have
-              been in the business since <strong>1983</strong>.
+              Al Farwania has served the UAE market since <strong>1983</strong>, focusing on surplus assets and materials.
             </p>
             <p className="mb-4">
               Being in the business for more than 2 decades, we have never compromised on the
@@ -33,11 +32,8 @@ const AboutUs: React.FC = () => {
               important of all nature.
             </p>
             <p className="mb-6">
-              We hold a clear record of providing the official requirement like laborers pass,
-              transportation and loading equipment measures on time.
-              <Link href="/about-us" className="ml-2 text-[#2474A5] hover:underline font-semibold">
-                Read more
-              </Link>
+              We provide on‑time documentation, transportation and loading coordination with a focus on compliance.
+              <Link href="/about-us" className="ml-2 text-[#2474A5] hover:underline font-semibold">Read more</Link>
             </p>
           </article>
 

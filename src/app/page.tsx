@@ -27,13 +27,13 @@ export default function Home() {
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Discover Scrap World — a trusted supplier and trader of recyclable ferrous and non‑ferrous metals. Browse products and check available stock.",
+    "Discover Al Farwania — a trusted supplier and trader of surplus assets and materials. Browse categories and check available stock.",
   keywords: [
-    "scrap world",
-    "scrap supplier",
-    "metal recycling",
-    "ferrous",
-    "non‑ferrous",
+    "al farwania",
+    "surplus supplier",
+    "industrial surplus",
+    "asset liquidation",
+    "surplus inventory",
     "available stock",
   ],
 };

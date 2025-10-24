@@ -10,11 +10,11 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 py-10 sm:py-14">
         <header className="max-w-3xl text-center mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 text-center">
-            Recyclable Ferrous & Non‑Ferrous Metals — Export Ready
+            Surplus Assets & Materials — Export Ready
           </h1>
           <p className="mt-4 text-gray-700 leading-relaxed text-center">
-            Scrap World supplies quality scrap metals with reliable logistics and global shipping.
-            Explore our products and check currently available stock.
+            Al Farwania supplies high‑quality surplus assets with reliable logistics and global shipping.
+            Explore categories and check currently available stock.
           </p>
         </header>
 
