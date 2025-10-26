@@ -24,15 +24,20 @@ const AboutUs: React.FC = () => {
           {/* Text content */}
           <article className="lg:col-span-7 text-gray-700 leading-relaxed" itemProp="description">
             <p className="mb-4">
-              Al Farwania has served the UAE market since <strong>1983</strong>, focusing on surplus assets and materials.
+              Since <strong>1983</strong>, Al Farwania has been a trusted buyer and supplier of
+              certified <strong>oil & gas field surplus</strong> across the Middle East, Africa, and Asia.
+              We specialize in <strong>OCTG</strong>, <strong>Valves</strong>, <strong>Drilling Equipment</strong>, and
+              <strong> Instrumentation</strong>.
             </p>
             <p className="mb-4">
-              Being in the business for more than 2 decades, we have never compromised on the
-              quality of our work, relation with the company, as well as the labors and most
-              important of all nature.
+              Our priority is quality assurance and compliance: <strong>MTR verification</strong>, full
+              <strong> traceability</strong>, and adherence to industry standards such as API / ASME / ISO.
+              Inventory is inspected and documented to ensure reliable performance in the field.
             </p>
             <p className="mb-6">
-              We provide on‑time documentation, transportation and loading coordination with a focus on compliance.
+              For sellers, we offer fair valuation, hassle‑free logistics, and rapid payment. For buyers,
+              we provide <strong>MTR‑verified inventory</strong>, sub‑OEM pricing, and fast dispatch with complete
+              export documentation.
               <Link href="/about-us" className="ml-2 text-[#2474A5] hover:underline font-semibold">Read more</Link>
             </p>
           </article>
@@ -41,8 +46,8 @@ const AboutUs: React.FC = () => {
           <figure className="lg:col-span-5">
             <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden border border-gray-200">
               <Image
-                src="/banner-contact.jpg"
-                alt="Scrap handling equipment and operations representing Scrap World"
+                src="/bg-about.jpg"
+                alt="Oil & gas surplus materials (OCTG, valves) prepared for export"
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
                 className="object-cover"
