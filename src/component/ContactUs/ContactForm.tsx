@@ -68,7 +68,12 @@ const ContactForm: React.FC = () => {
               <input className={inputBase} name="name" placeholder="Name" required />
               <input className={inputBase} type="email" name="email" placeholder="Email" required />
             </div>
-            <div className="mt-4">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <select className={inputBase} name="inquiryType" defaultValue="" required>
+                <option value="" disabled>Inquiry Type</option>
+                <option value="buying">Buying / Quote</option>
+                <option value="selling">Selling / Asset Liquidation</option>
+              </select>
               <input className={inputBase} name="phone" placeholder="Phone" />
             </div>
             <div className="mt-4">

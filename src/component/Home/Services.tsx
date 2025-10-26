@@ -1,32 +1,32 @@
 import React from "react";
-import { FaShip, FaIndustry, FaRecycle, FaWarehouse } from "react-icons/fa";
+import { FaShip, FaClipboardCheck, FaTools, FaFileAlt } from "react-icons/fa";
 
 type Service = { icon: React.ReactNode; title: string; description: string };
 
 const SERVICES: Service[] = [
   {
-    icon: <FaIndustry className="text-2xl text-[#2474A5]" />,
-    title: "Ferrous & Non‑Ferrous Trading",
+    icon: <FaClipboardCheck className="text-2xl text-[#2474A5]" />,
+    title: "Asset Acquisition",
     description:
-      "Sourcing and supply of quality recyclable metals with strict grading and documentation.",
+      "Fair valuation, hassle‑free logistics, and rapid payment for your surplus assets.",
   },
   {
-    icon: <FaWarehouse className="text-2xl text-[#2474A5]" />,
-    title: "Stock & Yard Management",
+    icon: <FaTools className="text-2xl text-[#2474A5]" />,
+    title: "Procurement",
     description:
-      "Well‑organized yards and inventory processes to ensure consistent availability.",
+      "MTR‑verified inventory, sub‑OEM pricing, and fast dispatch for OCTG, Valves, and more.",
   },
   {
-    icon: <FaRecycle className="text-2xl text-[#2474A5]" />,
-    title: "Sustainable Practices",
+    icon: <FaFileAlt className="text-2xl text-[#2474A5]" />,
+    title: "Quality Assurance & MTR Verification",
     description:
-      "Environmentally responsible handling aligned with global recycling standards.",
+      "Traceable documentation and compliance with oil & gas standards on every shipment.",
   },
   {
     icon: <FaShip className="text-2xl text-[#2474A5]" />,
     title: "Export & Logistics",
     description:
-      "Container stuffing, customs, and global shipping with reliable lead times.",
+      "Oversized oilfield equipment handling, HAZMAT compliance, and global shipping.",
   },
 ];
 
@@ -35,9 +35,9 @@ const Services: React.FC = () => {
     <section id="services" className="bg-gray-50">
       <div className="container mx-auto px-4 py-12 sm:py-16">
         <header className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">Our Services</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">Comprehensive Oil & Gas Surplus Solutions</h2>
           <div className="mx-auto mt-3 h-[3px] w-14 bg-[#2474A5]" />
-          <p className="mt-4 text-gray-700">Everything you need for dependable scrap metal supply.</p>
+          <p className="mt-4 text-gray-700">OCTG, Valves, Drilling Equipment — certified supply and acquisition.</p>
         </header>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -10,29 +10,28 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 py-10 sm:py-14">
         <header className="max-w-3xl text-center mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 text-center">
-            Surplus Assets & Materials — Export Ready
+            Certified Oil & Gas Surplus: Buy, Sell, and Manage Your Assets.
           </h1>
           <p className="mt-4 text-gray-700 leading-relaxed text-center">
-            Al Farwania supplies high‑quality surplus assets with reliable logistics and global shipping.
-            Explore categories and check currently available stock.
+            Your trusted partner for certified OCTG, Valves, Drilling Equipment, and Industrial Surplus.
           </p>
         </header>
 
         <div className="mt-6 flex flex-wrap items-center gap-3 justify-center">
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Link
-              href="#services"
+              href="/inventory"
               className="inline-flex items-center justify-center rounded-md bg-[#2474A5] px-5 py-3 font-semibold text-white shadow hover:bg-[#1f6792]"
             >
-              View Services
+              Browse Inventory
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Link
-              href="/contact"
+              href="/sell"
               className="inline-flex items-center justify-center rounded-md border border-gray-300 px-5 py-3 font-semibold text-gray-800 hover:bg-gray-50"
             >
-              Contact Us
+              Sell Your Assets
             </Link>
           </motion.div>
         </div>

@@ -18,14 +18,16 @@ const NAV_ITEMS: NavItem[] = [
   { label: "HOME", href: "/" },
   { label: "ABOUT US", href: "/about-us" },
   {
-    label: "PRODUCTS",
-    href: "/products",
+    label: "INVENTORY",
+    href: "/inventory",
     children: [
-      { label: "Scraps", href: "/scraps" },
-      { label: "Surplus", href: "/surplus" },
+      { label: "OCTG", href: "/inventory/octg" },
+      { label: "Valves", href: "/inventory/valves" },
+      { label: "Drilling Equipment", href: "/inventory/drilling-equipment" },
+      { label: "Instrumentation", href: "/inventory/instrumentation" },
     ],
   },
-  { label: "AVAILABLE STOCK", href: "/stock" },
+  { label: "SELL YOUR SURPLUS", href: "/sell" },
   { label: "CONTACT", href: "/contact-us" },
 ];
 
