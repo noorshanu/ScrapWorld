@@ -13,26 +13,26 @@ const PRODUCTS = [
   {
     title: "Cables",
     desc: "Industrial-grade electrical and signal cables for oil & gas applications.",
-    cover: "/window.svg",
-    images: ["/Slider/banner_3.jpg", "/Slider/banner_4.jpg", "/banner-contact.jpg", "/bg-about.jpg"],
+    cover: "/cable.jpg",
+    images: ["/cable.jpg", "/Slider/banner_4.jpg", "/banner-contact.jpg", "/bg-about.jpg"],
   },
   {
     title: "Valves",
     desc: "Gate, globe, check, ball and control valves — surplus and new-old-stock.",
-    cover: "/file.svg",
-    images: ["/Slider/banner_4.jpg", "/Slider/banner_3.jpg", "/banner-contact.jpg", "/bg-about.jpg"],
+    cover: "/vavle.webp",
+    images: ["/vavle.webp", "/Slider/banner_3.jpg", "/banner-contact.jpg", "/bg-about.jpg"],
   },
   {
     title: "Pipes",
     desc: "Carbon and stainless pipes in various schedules and diameters.",
     cover: "/globe.svg",
-    images: ["/banner-contact.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg", "/bg-about.jpg"],
+    images: ["/pip.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg", "/bg-about.jpg"],
   },
   {
     title: "Pipe Fittings & Flanges",
     desc: "Butt-weld fittings, forged fittings, and flanges in common ratings.",
-    cover: "/window.svg",
-    images: ["/bg-about.jpg", "/Slider/banner_4.jpg", "/Slider/banner_3.jpg", "/banner-contact.jpg"],
+    cover: "/fit.jpg",
+    images: ["/fit.jpg", "/Slider/banner_4.jpg", "/Slider/banner_3.jpg", "/banner-contact.jpg"],
   },
   {
     title: "Fasteners",
@@ -76,7 +76,7 @@ const InventoryCatalog: React.FC = () => {
       {/* Banner */}
       <div className={bannerStyles}>
         <div className="relative h-[28vh] sm:h-[36vh] md:h-[44vh]">
-          <Image src="/contact-banner.jpg" alt="Inventory banner" fill priority className="object-cover" sizes="100vw" />
+          <Image src="/pip.jpg" alt="Inventory banner" fill priority className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-black/45" />
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4">
