@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 select-none">
-            <Image src="/logo2.png" width={250} height={90} alt="ScrapWorld" priority className="drop-shadow rounded-lg" />
+            <Image src="/logo2.png" width={250} height={90} alt="ScrapWorld" priority className="w-[200px] md:w-[250px] h-auto drop-shadow rounded-lg" />
       
           </Link>
 
@@ -196,7 +196,7 @@ const Navbar: React.FC = () => {
             >
               <div className="flex items-center justify-between px-4 h-16 border-b"       onClick={closeMobile}>
                 <Link href="/" onClick={closeMobile} className="flex items-center gap-2">
-                  <Image src="/logo2.png" width={200} height={48} alt="Al Farwania" className="h-10 w-auto" />
+                  <Image src="/logo2.png" width={200} height={48} alt="Al Farwania" className="w-[200px] h-auto" />
     
                 </Link>
                 <button
