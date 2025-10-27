@@ -168,7 +168,7 @@ const Modal: React.FC<{ onClose: () => void; children: React.ReactNode }> = ({ o
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <motion.div
@@ -176,7 +176,7 @@ const Modal: React.FC<{ onClose: () => void; children: React.ReactNode }> = ({ o
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 24, opacity: 0 }}
         transition={{ duration: 0.25 }}
-        className="relative w-full max-w-4xl rounded-lg bg-white shadow-2xl"
+        className="relative w-full max-w-5xl rounded-xl bg-white/95 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -200,58 +200,83 @@ const Gallery: React.FC<{ images: string[]; title: string }> = ({ images, title 
   const next = () => goTo(index + 1);
   const prev = () => goTo(index - 1);
 
+  // keyboard navigation
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [index]);
+
   return (
     <div className="p-4 pt-12">
       <h3 className="px-1 text-lg font-bold text-gray-900">{title}</h3>
-      <div className="mt-3 relative h-[52vh] rounded-md overflow-hidden bg-gray-100">
+      <div className="mt-3 relative h-[52vh] rounded-xl overflow-hidden bg-gray-100">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={index}
-            initial={{ opacity: 0.2, scale: 1.02 }}
+            drag="x"
+            dragElastic={0.04}
+            onDragEnd={(_, info) => {
+              if (info.offset.x < -80) next();
+              if (info.offset.x > 80) prev();
+            }}
+            initial={{ opacity: 0.15, scale: 1.02 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0.2, scale: 1.02 }}
-            transition={{ duration: 0.4 }}
+            exit={{ opacity: 0.15, scale: 1.02 }}
+            transition={{ duration: 0.35 }}
             className="absolute inset-0"
           >
             <Image src={images[index]} alt={`${title} ${index + 1}`} fill className="object-cover" sizes="100vw" />
+            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/30 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
           </motion.div>
         </AnimatePresence>
+
         {images.length > 1 && (
           <>
             <button
               aria-label="Previous"
               onClick={prev}
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-gray-900 shadow hover:bg-white"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/80 backdrop-blur text-gray-900 shadow-md hover:bg-white"
             >
               <FiChevronLeft className="text-2xl" />
             </button>
             <button
               aria-label="Next"
               onClick={next}
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-gray-900 shadow hover:bg-white"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/80 backdrop-blur text-gray-900 shadow-md hover:bg-white"
             >
               <FiChevronRight className="text-2xl" />
             </button>
           </>
         )}
-        {images.length > 1 && (
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
-            {images.map((_, i) => {
-              const active = i === index;
-              return (
-                <button
-                  key={i}
-                  aria-label={`Go to slide ${i + 1}`}
-                  onClick={() => goTo(i)}
-                  className={`h-2.5 rounded-full transition-all ${active ? "w-6 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80"}`}
-                />
-              );
-            })}
-          </div>
-        )}
       </div>
-      <div className="mt-4 px-1 pb-4 text-right">
-        <Link href="/contact-us" className="inline-flex items-center justify-center rounded-md bg-[#2474A5] px-4 py-2 text-white text-sm font-semibold hover:bg-[#1f6792]">
+
+      {/* Thumbnails */}
+      {images.length > 1 && (
+        <div className="mt-4 flex items-center gap-3 overflow-x-auto px-1 pb-1">
+          {images.map((img, i) => {
+            const active = i === index;
+            return (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                className={`relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-lg border ${active ? "border-[#2474A5] ring-2 ring-[#2474A5]/60" : "border-gray-200"}`}
+              >
+                <Image src={img} alt={`thumb ${i + 1}`} fill className="object-cover" sizes="200px" />
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Fraction indicator + CTA */}
+      <div className="mt-2 flex items-center justify-between px-1 pb-4">
+        <div className="text-sm text-gray-600">{index + 1} / {images.length}</div>
+        <Link href="/contact-us" className="inline-flex items-center justify-center rounded-md bg-[#2474A5] px-4 py-2 text-white text-sm font-semibold shadow hover:bg-[#1f6792]">
           Contact Us
         </Link>
       </div>
