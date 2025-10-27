@@ -43,6 +43,11 @@ const Navbar: React.FC = () => {
   const [drawerOpenItem, setDrawerOpenItem] = React.useState<string | null>(null);
   const [scrolled, setScrolled] = React.useState(false);
 
+  const closeMobile = React.useCallback(() => {
+    setMobileOpen(false);
+    setDrawerOpenItem(null);
+  }, []);
+
   // Lock body scroll and close on ESC while drawer is open
   React.useEffect(() => {
     if (mobileOpen) {
@@ -177,7 +182,7 @@ const Navbar: React.FC = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               className="fixed inset-0 z-40 bg-black md:hidden"
-              onClick={() => setMobileOpen(false)}
+              onClick={closeMobile}
             />
 
             {/* Drawer */}
@@ -189,17 +194,17 @@ const Navbar: React.FC = () => {
               transition={{ type: "tween", duration: 0.25 }}
               className="fixed inset-y-0 left-0 z-50 w-[300px] max-w-[85vw] bg-white shadow-2xl md:hidden"
             >
-              <div className="flex items-center justify-between px-4 h-16 border-b">
-                <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2">
-                  <Image src="/logo.png" width={28} height={28} alt="ScrapWorld" />
-                  <span className="font-semibold">Scrap World</span>
+              <div className="flex items-center justify-between px-4 h-16 border-b"       onClick={closeMobile}>
+                <Link href="/" onClick={closeMobile} className="flex items-center gap-2">
+                  <Image src="/logo2.png" width={200} height={48} alt="Al Farwania" className="h-10 w-auto" />
+    
                 </Link>
                 <button
                   aria-label="Close menu"
                   className="inline-flex h-9 w-9 items-center justify-center rounded hover:bg-gray-50"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobile}
                 >
-                  <RxCross2 className="text-xl" />
+                  <RxCross2 className="text-xl"       onClick={closeMobile}/>
                 </button>
               </div>
 
@@ -212,7 +217,7 @@ const Navbar: React.FC = () => {
                         if (item.children) {
                           setDrawerOpenItem((prev) => (prev === item.label ? null : item.label));
                         } else {
-                          setMobileOpen(false);
+                          closeMobile();
                           window.location.href = item.href;
                         }
                       }}
@@ -244,7 +249,7 @@ const Navbar: React.FC = () => {
                               <Link
                                 key={child.label}
                                 href={child.href}
-                                onClick={() => setMobileOpen(false)}
+                                onClick={closeMobile}
                                 className="block py-2 text-sm text-gray-700 hover:underline"
                               >
                                 {child.label}
