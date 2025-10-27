@@ -9,7 +9,7 @@ const Banner: React.FC = () => {
     <section aria-label="About banner" className="relative w-full overflow-hidden">
       <div className="relative h-[36vh] sm:h-[44vh] md:h-[54vh]">
         <Image
-          src="/bg-about.jpg"
+          src="/banner1.jpeg"
           alt="About Scrap World background"
           fill
           priority

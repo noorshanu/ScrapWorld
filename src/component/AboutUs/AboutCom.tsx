@@ -13,7 +13,7 @@ const AboutCom: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           <article className="lg:col-span-7 text-gray-700 leading-relaxed">
             <p className="mb-4">
-              Since <strong>1983</strong>, Al Farwania has been a trusted buyer and supplier of certified
+     <strong>Al Farwania</strong> has been a trusted buyer and supplier of certified
               <strong> oil & gas field surplus</strong> across the Middle East, Africa, and Asia. We specialize in
               <strong> OCTG</strong>, <strong> Valves</strong>, <strong> Drilling Equipment</strong>, and
               <strong> Instrumentation</strong>.
@@ -32,7 +32,7 @@ const AboutCom: React.FC = () => {
           <figure className="lg:col-span-5">
             <div className="relative aspect-[16/10] w-full rounded-md border border-gray-200 overflow-hidden">
               <Image
-                src="/bg-about.jpg"
+                src="/about2.jpeg"
                 alt="Oil & gas surplus materials (OCTG, valves) organized for export"
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
