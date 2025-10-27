@@ -16,7 +16,7 @@ const Cta: React.FC = () => {
           </header>
           <div className="md:justify-self-end">
             <Link
-              href="/contact"
+              href="/contact-us"
               className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 font-semibold text-[#2474A5] shadow hover:bg-white/95"
             >
               Contact Us
