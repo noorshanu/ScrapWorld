@@ -8,7 +8,7 @@ const Cta: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
           <header className="md:col-span-2">
             <h2 id="cta-heading" className="text-2xl sm:text-3xl font-extrabold">
-              Ready to source quality scrap metals?
+              Ready to source quality surplus metals?
             </h2>
             <p className="mt-2 text-white/90">
               Get quotes, check available stock, or discuss your logistics needs with our team.

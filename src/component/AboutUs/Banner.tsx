@@ -37,7 +37,7 @@ const Banner: React.FC = () => {
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.12 }}
               className="mt-3 max-w-2xl text-white/90"
             >
-              Operating since 1983 — quality scrap metals and dependable export logistics.
+              Operating since Al Farwania — quality surplus metals and dependable export logistics.
             </motion.p>
           </div>
         </div>

@@ -33,7 +33,7 @@ const AboutHero: React.FC = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white"
             >
-              About Scrap World
+              About Al Farwania
             </motion.h1>
             <motion.p
               initial={{ y: 16, opacity: 0 }}
@@ -42,7 +42,7 @@ const AboutHero: React.FC = () => {
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 }}
               className="mt-3 max-w-2xl text-white/90"
             >
-              Since 1983, delivering reliable scrap metal sourcing, quality, and export logistics.
+              Al Farwania, delivering reliable surplus metal sourcing, quality, and export logistics.
             </motion.p>
           </div>
         </div>

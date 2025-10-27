@@ -8,7 +8,7 @@ const AboutCTA: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
           <header className="md:col-span-2">
             <h2 id="about-cta" className="text-2xl sm:text-3xl font-extrabold">
-              Ready to work with Scrap World?
+              Ready to work with Al Farwania?
             </h2>
             <p className="mt-2 text-white/90">
               Talk to our team for availability, grades, and export logistics.

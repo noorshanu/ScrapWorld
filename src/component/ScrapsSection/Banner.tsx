@@ -29,7 +29,7 @@ const Banner: React.FC = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white"
             >
-              SCRAPS
+            SURPLUS
             </motion.h1>
             <motion.p
               initial={{ y: 14, opacity: 0 }}
