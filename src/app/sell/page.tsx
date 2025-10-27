@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
+import Banner from "@/component/ScrapsSection/Banner";
 export const metadata: Metadata = {
   title: "Sell Your Surplus",
   description: "Liquidate oil & gas surplus with fair valuation, hassle‑free logistics, and rapid payment.",
@@ -15,7 +15,9 @@ export default function SellPage() {
   ];
 
   return (
-    <main className="container mx-auto px-4 py-10 sm:py-14">
+  <>
+  <Banner />
+  <main className="container mx-auto px-4 py-10 sm:py-14">
       <header className="max-w-3xl text-center mx-auto">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Sell Your Surplus</h1>
         <div className="mx-auto mt-3 h-[3px] w-14 bg-[#2474A5]" />
@@ -36,7 +38,7 @@ export default function SellPage() {
           Start Selling
         </Link>
       </div>
-    </main>
+    </main></>
   );
 }
 

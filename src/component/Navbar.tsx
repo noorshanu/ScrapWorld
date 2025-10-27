@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
     ? "flex items-center gap-1 font-semibold text-gray-800 hover:text-gray-900"
     : "flex items-center gap-1 font-semibold text-white hover:text-white/90";
   const headerClasses = scrolled
-    ? "fixed top-0 z-40 w-full bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow"
+    ? "fixed top-0 z-40 w-full bg-white backdrop-blur  shadow"
     : "absolute top-10 z-40 w-full bg-transparent";
   const iconColorClass = scrolled ? "text-gray-900" : "text-white";
   const underlineColorClass = scrolled ? "bg-[#2474A5]" : "bg-white";
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
   return (
     <>
     <header className={headerClasses}>
-      <div className="container mx-auto py-4">
+      <div className="container mx-auto py-1">
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 select-none">

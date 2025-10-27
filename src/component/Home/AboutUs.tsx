@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Link from "next/link";
 
 
@@ -42,18 +45,9 @@ const AboutUs: React.FC = () => {
             </p>
           </article>
 
-          {/* Right image */}
+          {/* Right slider */}
           <figure className="lg:col-span-5">
-            <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden border border-gray-200">
-              <Image
-                src="/about.jpeg"
-                alt="Oil & gas surplus materials (OCTG, valves) prepared for export"
-                fill
-                sizes="(min-width: 1024px) 560px, 100vw"
-                className="object-cover"
-                priority={false}
-              />
-            </div>
+            <AboutSlider />
           </figure>
         </div>
 
@@ -64,3 +58,99 @@ const AboutUs: React.FC = () => {
 };
 
 export default AboutUs;
+
+// Local lightweight slider for About image panel
+const SLIDES = [
+  { src: "/about.jpeg", alt: "OCTG and valves prepared for export" },
+  { src: "/banner-contact.jpg", alt: "Logistics and export coordination" },
+  { src: "/bg-about.jpg", alt: "Industrial surplus warehousing" },
+];
+
+const AUTOPLAY_MS = 4500;
+
+const AboutSlider: React.FC = () => {
+  const [index, setIndex] = React.useState(0);
+  const [paused, setPaused] = React.useState(false);
+
+  const goTo = React.useCallback((i: number) => {
+    setIndex(((i % SLIDES.length) + SLIDES.length) % SLIDES.length);
+  }, []);
+
+  const next = React.useCallback(() => goTo(index + 1), [index, goTo]);
+  const prev = React.useCallback(() => goTo(index - 1), [index, goTo]);
+
+  React.useEffect(() => {
+    if (paused || SLIDES.length <= 1) return;
+    const id = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), AUTOPLAY_MS);
+    return () => clearInterval(id);
+  }, [paused]);
+
+  const slide = SLIDES[index];
+
+  return (
+    <section
+      aria-label="About image slider"
+      className="relative w-full aspect-[16/9] rounded-md overflow-hidden border border-gray-200"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={() => setPaused(false)}
+    >
+      <AnimatePresence initial={false} mode="wait">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 1.02 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0.4, scale: 1.02 }}
+          transition={{ duration: 0.6 }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            sizes="(min-width: 1024px) 560px, 100vw"
+            className="object-cover"
+            priority={false}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+        </motion.div>
+      </AnimatePresence>
+
+      {SLIDES.length > 1 && (
+        <>
+          <button
+            aria-label="Previous image"
+            onClick={prev}
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-gray-900 shadow hover:bg-white"
+          >
+            <FiChevronLeft className="text-xl" />
+          </button>
+          <button
+            aria-label="Next image"
+            onClick={next}
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-gray-900 shadow hover:bg-white"
+          >
+            <FiChevronRight className="text-xl" />
+          </button>
+        </>
+      )}
+
+      {SLIDES.length > 1 && (
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+          {SLIDES.map((_, i) => {
+            const active = i === index;
+            return (
+              <button
+                key={i}
+                aria-label={`Go to image ${i + 1}`}
+                onClick={() => goTo(i)}
+                className={`h-2.5 rounded-full transition-all ${active ? "w-6 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80"}`}
+              />
+            );
+          })}
+        </div>
+      )}
+    </section>
+  );
+};

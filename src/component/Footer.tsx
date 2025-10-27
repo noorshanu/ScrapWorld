@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           {/* About */}
           <div>
             <Link href="/" className="inline-flex items-center gap-3 select-none">
-              <Image src="/logo.jpg" width={300} height={100} alt="Scrap World" className="opacity-95" />
+              <Image src="/logo2.png" width={300} height={100} alt="Scrap World" className="opacity-95 rounded-lg" />
             </Link>
             
       
