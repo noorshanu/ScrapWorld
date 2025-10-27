@@ -1,159 +1,48 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { motion } from "framer-motion";
 
-type Slide = {
-  src: string;
-  alt: string;
-  heading?: string;
-  subheading?: string;
-};
-
-const SLIDES: Slide[] = [
-  {
-    src: "/Slider/banner_3.jpg",
-    alt: "Surplus assets banner 3",
-    heading: "WELCOME TO",
-    subheading: "AL FARWANIA",
-  },
-  {
-    src: "/Slider/banner_4.jpg",
-    alt: "Surplus assets banner 4",
-    heading: "WELCOME TO",
-    subheading: "AL FARWANIA",
-  },
-];
-
-const AUTOPLAY_MS = 5000;
+// Background video hero
 
 const Slider: React.FC = () => {
-  const [activeIndex, setActiveIndex] = React.useState(0);
   const [isPaused, setIsPaused] = React.useState(false);
-
-  const goTo = React.useCallback((index: number) => {
-    const next = (index + SLIDES.length) % SLIDES.length;
-    setActiveIndex(next);
-  }, []);
-
-  const goNext = React.useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
-  const goPrev = React.useCallback(() => goTo(activeIndex - 1), [activeIndex, goTo]);
-
-  // Autoplay with pause on hover/focus
-  React.useEffect(() => {
-    if (isPaused || SLIDES.length <= 1) return;
-    const id = setInterval(() => {
-      setActiveIndex((i) => (i + 1) % SLIDES.length);
-    }, AUTOPLAY_MS);
-    return () => clearInterval(id);
-  }, [isPaused]);
-
-  const slide = SLIDES[activeIndex];
+ 
 
   return (
     <section
-      aria-label="Hero slider"
+      aria-label="Hero video"
       className="relative w-full h-[62vh] sm:h-[78vh] overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
     >
-      {/* Slides */}
-      <AnimatePresence initial={false} mode="wait">
-        <motion.div
-          key={activeIndex}
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0.4, scale: 1.02 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="absolute inset-0"
-        >
-          <Image
-            src={slide.src}
-            alt={slide.alt}
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-          {/* Global dim overlay */}
-          <div className="absolute inset-0 bg-black/50 pointer-events-none" />
-          {/* Top gradient for header readability */}
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
-          {/* Bottom gradient for caption readability */}
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/bgvideo.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-label="Background video"
+      />
+      <div className="absolute inset-0 bg-black/45 pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
 
-          {/* Overlay content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center select-none px-4">
-              {slide.heading && (
-                <motion.h2
-                  key={`h-${activeIndex}`}
-                  initial={{ y: 24, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-                  className="text-white text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow"
-                >
-                  {slide.heading}
-                </motion.h2>
-              )}
-              {slide.subheading && (
-                <motion.h3
-                  key={`sh-${activeIndex}`}
-                  initial={{ y: 24, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, ease: "easeOut", delay: 0.28 }}
-                  className="mt-2 text-white text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow"
-                >
-                  {slide.subheading}
-                </motion.h3>
-              )}
-            </div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Controls */}
-      {SLIDES.length > 1 && (
-        <>
-          <button
-            aria-label="Previous slide"
-            onClick={goPrev}
-            className="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/85 text-gray-900 shadow hover:bg-white"
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="text-center select-none px-4">
+          <motion.h2
+            initial={{ y: 24, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+            className="text-white text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow"
           >
-            <FiChevronLeft className="text-2xl" />
-          </button>
-          <button
-            aria-label="Next slide"
-            onClick={goNext}
-            className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/85 text-gray-900 shadow hover:bg-white"
-          >
-            <FiChevronRight className="text-2xl" />
-          </button>
-        </>
-      )}
-
-      {/* Dots */}
-      {SLIDES.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
-          {SLIDES.map((_, i) => {
-            const isActive = i === activeIndex;
-            return (
-              <button
-                key={i}
-                aria-label={`Go to slide ${i + 1}`}
-                onClick={() => goTo(i)}
-                className={`h-2.5 rounded-full transition-all ${
-                  isActive ? "w-6 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80"
-                }`}
-              />
-            );
-          })}
+            WELCOME TO AL FARWANIA
+          </motion.h2>
         </div>
-      )}
+      </div>
     </section>
   );
 };
