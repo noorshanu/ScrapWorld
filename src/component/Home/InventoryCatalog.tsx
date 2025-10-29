@@ -37,32 +37,32 @@ const PRODUCTS = [
   {
     title: "Fasteners",
     desc: "Stud bolts, nuts, washers — coated and uncoated options.",
-    cover: "/file.svg",
-    images: ["/Slider/banner_3.jpg", "/banner-contact.jpg", "/bg-about.jpg", "/Slider/banner_4.jpg"],
+    cover: "/fasner.jpeg",
+    images: ["/fasner.jpeg", "/Slider/banner_3.jpg", "/banner-contact.jpg", "/bg-about.jpg", "/Slider/banner_4.jpg"],
   },
   {
     title: "E & I Material",
     desc: "Electrical and instrumentation components and accessories.",
     cover: "/globe.svg",
-    images: ["/bg-about.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg", "/banner-contact.jpg"],
+    images: ["/eim.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg", "/banner-contact.jpg"],
   },
   {
     title: "Gaskets",
     desc: "Spiral wound, ring type joints, and sheet gaskets.",
     cover: "/window.svg",
-    images: ["/Slider/banner_4.jpg", "/bg-about.jpg", "/Slider/banner_3.jpg", "/banner-contact.jpg"],
+    images: ["/gasket.png", "/bg-about.jpg", "/Slider/banner_3.jpg", "/banner-contact.jpg"],
   },
   {
     title: "Structural Material",
     desc: "Beams, channels, angles, and plates for structural applications.",
     cover: "/file.svg",
-    images: ["/bg-about.jpg", "/banner-contact.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg"],
+    images: ["/smt.jpg", "/banner-contact.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg"],
   },
   {
     title: "Plates, Sheets, Coils",
     desc: "Carbon and stainless plates, sheets, and coils in common grades.",
-    cover: "/globe.svg",
-    images: ["/banner-contact.jpg", "/bg-about.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg"],
+    cover: "/sheet.svg",
+    images: ["/sheet.webp", "/banner-contact.jpg", "/bg-about.jpg", "/Slider/banner_3.jpg", "/Slider/banner_4.jpg"],
   },
 ];
 
