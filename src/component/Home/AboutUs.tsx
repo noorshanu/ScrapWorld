@@ -61,9 +61,9 @@ export default AboutUs;
 
 // Local lightweight slider for About image panel
 const SLIDES = [
-  { src: "/about.jpeg", alt: "OCTG and valves prepared for export" },
-  { src: "/banner-contact.jpg", alt: "Logistics and export coordination" },
-  { src: "/bg-about.jpg", alt: "Industrial surplus warehousing" },
+  { src: "/pip.jpg", alt: "OCTG and valves prepared for export" },
+  { src: "/fit.jpg", alt: "Logistics and export coordination" },
+  { src: "/cable.jpg", alt: "Industrial surplus warehousing" },
 ];
 
 const AUTOPLAY_MS = 4500;
